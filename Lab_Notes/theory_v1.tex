@@ -1,0 +1,266 @@
+\documentclass[11pt, letterpaper]{article}
+
+% Essential math and formatting packages
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{bm} % For bold math symbols
+\usepackage{graphicx}
+\usepackage{circuitikz}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage{endnotes}
+\let\footnote=\endnote
+
+% Theorem environments for structuring theory
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{hypothesis}{Hypothesis}
+\newtheorem{definition}{Definition}[section]
+
+% Document Information
+\title{\textbf{Theory}\\ \large Gaussian Beam Optics}
+\author{Tyler Celotta \\ UAF}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+
+\end{abstract}
+
+\section{Experiment specifics}
+\begin{enumerate}
+    \item Wavelength: $1064 nm$ 
+    \item Collimator output beam size: $0.56$ mm $\frac1{e^2}$ diameter 
+    \item PPLN crystal: $50 \times 2 \times 0.5$ mm$^3$
+    \item Previous best measured output: $57$ mW green, PPLN at $59.5^{\circ} C $
+    \item Previous calculated waist: about $45$~$\mu$m 
+    \item Desired next target: about $77–80$~$\mu$m
+\end{enumerate}
+
+\section{Definitions and Equations}
+\textbf{Beam Diameter ($\frac 1{e^2}$): }$\frac1{e^2}= 0.135335$ beam diameter captures the diameter where the intensity of the beam drops to $13.53\%$ or in other words $86.47\%$ of the beam intensity is within the given diameter. 
+
+\begin{center}
+\includegraphics[width=0.25\linewidth]{figures/Picture1en-us.jpg}   
+\end{center}
+
+\textbf{Beam Waist ($\omega_0$):} The beam waist it the portion fo the beam where the radius is minimized. This is notated as $w_0$. The tighter the focus the smaller the waist, but this introduces a large amount of divergence. This can be seen in the z dependent beam width equation 
+\begin{equation}\label{omega}
+    \omega^2(z)=\omega_0^2\left[1+\left(\frac{\lambda z}{\pi \omega_0^2}\right)^2\right]
+\end{equation}
+Small waists are achieved by a "short focal length and a high numerical aperture largely filled by the input beam."\cite{RPw_0}
+\begin{center}
+    \includegraphics[width=0.4\linewidth]{figures/download.png}
+\end{center}
+
+\textbf{Radius of Curvature ($R_g$): } The radius of curvature defined by Eq. \ref{roc}. At its boundaries, $\lim\limits_{z\to0} R_g(z)=\infty$ where the wave front is perfectly vertical and acts like a section of a circle with an infinite radius. $\lim\limits_{z\to\infty}R_g(z)=z$ where the wave front averages out to a radius equal to the distance from the waist.
+\begin{equation}\label{roc}
+R_g(z) = z\left[1 + \left(\frac{\pi \omega_0^2}{\lambda z}\right)^2\right]
+\end{equation}
+
+\textbf{Rayleigh Range ($z_0$):} Referring back to $R_g$, the Rayleigh range is the distance where the cross sectional area of the beam is no more than twice the cross sectional area of the beam waist. This ensures we maintain at least $50\%$ of the beam. \cite{RPz_0}
+
+\begin{equation}\label{z_0}
+z_0=\frac{\pi \omega_0^2}{\lambda}
+\end{equation}
+
+\textbf{Beam Divergence ($\theta$): } Is the slope of the linear component of the beam expansion, also known as the expansion in the far field. This is measure with half angles dependent on the wavelength and inverse of the waist defined by Eq. \ref{theta}.
+
+\begin{equation}\label{theta}
+    \theta=\frac{\lambda}{\pi \omega_0}
+\end{equation}
+\begin{center}
+    \includegraphics[width=0.3\linewidth]{Screenshot 2026-06-02 at 13.18.55.png}
+\end{center}
+
+\textbf{Confocal Parameter ($b$): } A use of the Rayleigh range is the Confocal parameter, the distance or error in which the focus of your beam can operate at a level of usability. It is the "the total length of the focused region around the beam waist"\cite{RPz_0}.
+
+
+\textbf{Boyd-Kleinman Focusing: }
+$h = 1.068$ at $L/b = 2.84$ \cite{boyd}
+$h = 1.066$ at $L/b = 2.81$ \cite{hcp}
+Where h is conversion efficiency, L is this length of the crystal and b is the confocal parameter which is twice the Rayleigh range. So we should work backwards to find the waist. Refer to calculation 2
+
+
+\footnote{Wikipedia entry: Second-harmonic generation (SHG), also known as frequency doubling, is the lowest-order wave-wave nonlinear interaction that occurs in various systems, including optical, radio, atmospheric, and magnetohydrodynamic systems. As a prototype behavior of waves, SHG is widely used, for example, in doubling laser frequencies. SHG was initially discovered as a nonlinear optical process in which two photons with the same frequency interact with a nonlinear material, are "combined", and generate a new photon with twice the energy of the initial photons (equivalently, twice the frequency and half the wavelength), that conserves the coherence of the excitation. It is a special case of two-photon sum-frequency generation, and more generally of harmonic generation.}
+
+
+
+\footnote{\textbf{Phase-matching:} For sum-frequency generation to occur efficiently, phase-matching conditions must be satisfied:$\hbar k_{3}\approx \hbar k_{1}+\hbar k_{2}$ where $k_{1},k_{2},k_{3}$ are the angular wavenumbers of the three waves as they travel through the medium. (Note that the equation resembles the equation for conservation of momentum.) As this condition is satisfied more and more accurately, the sum-frequency generation becomes more and more efficient.}
+
+
+
+\section{Calculations}
+\begin{enumerate}
+    \item \textit{Starting from a 0.56 mm 1/e² beam diameter at 1064 nm, what are the approximate Gaussian beam parameters?}\\
+Using Eq.\ref{z_0}\footnote{In this calculation I assume $\frac{w_0}{2}=0.56$ mm because it came out of a collimator. That being said this is making an assumption that the output beam may have its beam waist a mild focus somewhat away from the face of the collimator as outlined in \cite{column} "The purpose of a beam collimator is essentially to transform a strongly diverging light beam into a collimated beam, i.e., a beam where light propagates essentially only in one direction, and the beam divergence is weak. The output beam may have its beam waist close to the output aperture, or a mild focus somewhat away from it."}
+   $$z_0=\frac{\pi \omega_0^2}{\lambda}=\frac{\pi\cdot (0.00028)^2}{0.000001064}=0.23148577447\text{ m}\approx 23.148 \text{ cm}$$
+Using Eq. \ref{theta}
+$$\theta=\frac{\lambda}{\pi \omega_0}=\frac{0.000001064}{\pi \cdot 0.00028}=0.001209578\approx1.210\times10^{-3}$$
+
+\item \begin{enumerate}
+    \item 
+\textit{Given $\frac{L}{b}=2.84$ and $L=50$} mm\cite{boyd}\\ 
+$$b=\frac{L}{2.84}=\frac{0.05}{2.84}$$
+Using Eq. \ref{z_0}
+
+$$\frac{0.05}{2.84}=b=2\cdot z_0=\frac{2\cdot\pi \cdot \omega_0^2}{\lambda}$$
+
+$$\frac{0.05}{2.84}=\frac{2\cdot\pi \cdot \omega_0^2}{1064\cdot10^{-9}}=\sqrt{\frac{1064\cdot10^{-9}\cdot0.05}{2\cdot\pi \cdot2.84}}=\omega_0$$
+$$\approx0.000054601768829654717265993916359\approx 54.602~\text{$\mu$m}$$
+\item
+\textit{Given $\frac{L}{b}=2.81$ and $L=50$} mm\cite{hcp}\\ 
+$$b=\frac{L}{2.81}=\frac{0.05}{2.81}$$
+Using Eq. \ref{z_0}
+
+$$\frac{0.05}{2.81}=b=2\cdot z_0=\frac{2\cdot\pi \cdot \omega_0^2}{\lambda}$$
+
+$$\frac{0.05}{2.81}=\frac{2\cdot\pi \cdot \omega_0^2}{1064\cdot10^{-9}}=\sqrt{\frac{1064\cdot10^{-9}\cdot0.05}{2\cdot\pi \cdot2.81}}=\omega_0$$
+$$\approx0.00005489246353086303938501371680382\approx 54.892~\text{$\mu$m}$$
+
+
+\item \textit{Given $\frac{L}{b}=1$ and $L=50$} mm\cite{PPLN}\footnote{"In general, a good rule of thumb is that the spot size should be chosen such that the Rayleigh range is half the length of the crystal." If $z_0=L/2$, then $b = 2z_0=L\Rightarrow\frac{L}{b}=1$}\\ 
+$$b=\frac{L}{1}=0.05$$
+Using Eq. \ref{z_0}
+
+$$0.05=b=2\cdot z_0=\frac{2\cdot\pi \cdot \omega_0^2}{\lambda}$$
+
+$$0.05=\frac{2\cdot\pi \cdot \omega_0^2}{1064\cdot10^{-9}}=\sqrt{\frac{1064\cdot10^{-9}}{2\cdot\pi}}=\omega_0$$
+$$\approx0.0000920165364078046129480467\approx 92.017~\text{$\mu$m}$$
+
+\item If we want to hit the previous calculated waists and predicted targets lets work backwards, letting $\frac Lb = \alpha$
+\begin{enumerate}
+    \item 45$\mu$m$\Rightarrow $
+$$\omega_0=0.000045=\sqrt{\frac{1064\cdot10^{-9}\cdot0.05}{2\cdot\pi \cdot \alpha}}$$
+$$0.000045^2=\frac{1064\cdot10^{-9}\cdot0.05}{2\cdot\pi \cdot \alpha}\Rightarrow\alpha=\frac{1064\cdot10^{-9}\cdot0.05}{2\cdot\pi \cdot 2.025 \times 10^{-9}}\approx 4.181$$ Too narrow of a waist which leads to too much diffraction, and loses efficiency. 
+
+    \item 77$\mu$m$\Rightarrow $
+$$\omega_0=0.000077=\sqrt{\frac{1064\cdot10^{-9}\cdot0.05}{2\cdot\pi \cdot \alpha}}$$
+$$0.000077^2=\frac{1064\cdot10^{-9}\cdot0.05}{2\cdot\pi \cdot \alpha}\Rightarrow\alpha=\frac{1064\cdot10^{-9}\cdot0.05}{2\cdot\pi \cdot 5.929 \times 10^{-9}}\approx 1.428$$ In the proper range
+    
+    \item 80$\mu$m$\Rightarrow $
+$$\omega_0=0.00008=\sqrt{\frac{1064\cdot10^{-9}\cdot0.05}{2\cdot\pi \cdot \alpha}}$$
+$$0.00008^2=\frac{1064\cdot10^{-9}\cdot0.05}{2\cdot\pi \cdot \alpha}\Rightarrow\alpha=\frac{1064\cdot10^{-9}\cdot0.05}{2\cdot\pi \cdot 6.4 \times 10^{-9}}\approx 1.323$$
+In the proper range
+    
+\end{enumerate}
+
+
+\end{enumerate}
+\item \textit{Now trying without the assumption of the waist being at the front face of the collimator}\footnote{Note: 1.21 mRad was a measured value, substantially lower than the spec sheet citing roughly 5 mRad}\\ 
+\begin{enumerate}
+    \item
+Using Eq. \ref{theta}
+$$\theta=\frac{\lambda}{\pi \omega_{01}}\Rightarrow \omega_{01}=\frac{\lambda}{\pi \theta}=\frac{0.000001064}{\pi \cdot 0.00121}$$ $$\approx0.000279902247024424\approx0.2799 \text{ mm}=\omega_{01}$$ 
+This is too thick to aim for as the waist so we will have to magnify the beam
+    \item Now using Eq. \ref{w(z)} from Eq. 2-27 \cite{Osche} 
+    \begin{equation}\label{w(z)}
+        \omega^2(z)=\omega_{01}^2\left[1+\left(\frac{\lambda z}{\pi \omega_{01}^2}\right)^2\right]
+    \end{equation}
+    $$\frac{\omega^2(z)}{\omega_{01}^2}=1+\left(\frac{\lambda z}{\pi \omega_{01}^2}\right)^2\Rightarrow \left(\frac{\omega^2(z)}{\omega_{01}^2}-1\right)=\left(\frac{\lambda z}{\pi \omega_{01}^2}\right)^2$$
+    $$\Rightarrow\left(\sqrt{\frac{\omega^2(z)}{\omega_{01}^2}-1}\right) \pi \omega_0^2=\pm\lambda z\Rightarrow \left(\sqrt{\frac{\omega^2(z)}{\omega_{01}^2}-1}\right)\frac{\pi \omega_{01}^2}{\lambda}= \pm z$$
+    Using $\omega(z)=0.00028$ m as diameter of the collimator is 0.56 mm
+
+$$\Rightarrow\left(\sqrt{\frac{0.00028^2}{0.0002799^2}-1}\right)\cdot \frac{\pi\cdot 0.0002799^2}{0.000001064}=\pm z\approx \pm 0.006184=\pm 6.184\text{ mm}$$
+Which is understood to be the distance in the negative z direction that the waist is located behind the collimator face.
+\item \textit{Now to recalculate with the new beam waist location} Let $w_0=0.00052-$
+
+\item Starting with $$q_{out} = \frac{A(i z_{01}) + B}{C(i z_{01}) + D}$$
+we have a given $q_{in}=0.0002799$ m and a desired $q_{out}=0.00008$ m
+Seperating the complex components results in
+$$q_{out} = {\left[ \frac{BD + AC z_{01}^2}{D^2 + C^2 z_{01}^2} \right]} + i {\left[ \frac{(AD - BC)z_{01}}{D^2 + C^2 z_{01}^2} \right]}$$
+
+
+
+\item \textit{Calculating the required lens and crystal placement}\\
+To achieve our target waist of $80~\mu\text{m}$ using our standard $f = 88.3~\text{mm}$ lens, we must first determine the required magnification $M$:
+$$M = \frac{\omega_{02}}{\omega_{01}} = \frac{0.080~\text{mm}}{0.2799~\text{mm}} \approx 0.2858$$
+
+Using the Gaussian magnification factor derived from the ABCD matrix transformations defined by Osche [4], we can solve for the required distance from the true beam waist to the lens ($d_1$):
+$$M = \frac{f}{\sqrt{(d_1 - f)^2 + z_{01}^2}} \Rightarrow d_1 = f + \sqrt{\left(\frac{f}{M}\right)^2 - z_{01}^2}$$
+
+
+
+
+
+
+
+\end{enumerate}
+\end{enumerate}
+\section{Use case}
+\textbf{PPLN:} To get the most out of our PPLN crystals, there are four key aspects that you need to consider:\footnote{Periodically poled lithium niobate (PPLN) is a lithium niobate crystal that switches polarity in a periodic fashion and is used for achieving quasi-phase-matching in nonlinear optics.}
+\begin{enumerate}
+    \item Crystal Length
+    \begin{enumerate}
+        \item Don't worry about it
+    \end{enumerate}
+    
+    \item Polarization
+    \begin{enumerate}
+        \item The input light must e-polarized, i.e. the polarization must be aligned with the dipole moment of the crystal. This is accomplished by aligning the polarization axis of the light parallel to the thickness of the crystal. \cite{PPLN}
+    \end{enumerate}
+    
+    \item Focusing and the optical arrangement
+        \begin{enumerate}
+        \item For SHG with CW lasers, a theoretical result from Boyd and Kleinmann shows that optimum efficiency can be achieved when the ratio of the crystal length to the confocal parameter is 2.84. \cite{PPLN}
+    \end{enumerate}
+    
+    \item Temperature and period
+        \begin{enumerate}
+        \item The crystal is manufactured to have "stripes" of magnetically opposite layers with a distance in between labeled as the poling period. IT in theory helps create quasi-phase-matched light so the power continually builds up.
+        \item Because of manufacturing inconsistencies and because heat transfer allows the crystal to expand or contract, we can change the poling period of the crystal by changing the crystals temperature.
+        \item Note: The refractive index of the crystal also changes with temperature.
+        \item The intensity of light follows a $\text{sinc}(x)=\frac{\sin^2(x)}{x^2}$ curve as shown below, describing a crystal temperature acceptance bandwidth.
+            \begin{center}
+                \includegraphics[width=0.5\linewidth]{TP-Graph-4.png.png}
+            \end{center}
+        \item Note: Acceptance bandwidth is inversely proportional to crystal length.
+        \item The optimum temperature can be determined by heating the crystal to 20°C higher than the calculated temperature and then allowing the crystal to cool whilst monitoring the output power at the generated wavelength.\cite{PPLN}
+        \end{enumerate}
+
+
+
+\end{enumerate}
+    
+\begin{figure}[!ht]
+\centering
+\resizebox{1\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\fontsize{18.2pt}{23.7pt}\selectfont]
+\draw (8.125,13.75) to[short] (10.125,13.75);
+\draw (8.125,13.75) to[short] (8.125,11.875);
+\draw (8.125,11.875) to[short] (10.125,11.875);
+\draw (10.125,11.875) to[short] (10.125,13.75);
+\draw (11.5,13.75) to[short] (13.5,13.75);
+\draw (11.5,13.75) to[short] (11.5,11.875);
+\draw (11.5,11.875) to[short] (13.5,11.875);
+\draw (13.5,13.75) to[short] (13.5,11.875);
+\draw (14.875,13.75) to[short] (14.875,11.875);
+\draw (14.875,11.875) to[short] (16.875,11.875);
+\draw (16.875,11.875) to[short] (16.875,13.75);
+\draw (14.875,13.75) to[short] (16.875,13.75);
+\draw (18.25,13.75) to[short] (20.25,13.75);
+\draw (6.75,13.75) to[short] (4.75,13.75);
+\draw (4.75,13.75) to[short] (4.75,11.875);
+\draw (4.75,11.875) to[short] (6.75,11.875);
+\draw (6.75,11.875) to[short] (6.75,13.75);
+\draw (18.25,13.75) to[short] (18.25,11.875);
+\draw (18.25,11.875) to[short] (20.25,11.875);
+\draw (20.25,11.875) to[short] (20.25,13.75);
+\node [font=\fontsize{18.2pt}{23.7pt}\selectfont, inner xsep=0.080cm, inner ysep=0.085cm, rounded corners=0.020cm] at (5.75,12.75) {S1};
+\node [font=\fontsize{18.2pt}{23.7pt}\selectfont, inner xsep=0.080cm, inner ysep=0.085cm, rounded corners=0.020cm] at (9.125,12.75) {S2};
+\node [font=\fontsize{18.2pt}{23.7pt}\selectfont, inner xsep=0.080cm, inner ysep=0.085cm, rounded corners=0.020cm] at (12.5,12.75) {S3};
+\node [font=\fontsize{18.2pt}{23.7pt}\selectfont, inner xsep=0.080cm, inner ysep=0.085cm, rounded corners=0.020cm] at (15.875,12.75) {S4};
+\node [font=\fontsize{18.2pt}{23.7pt}\selectfont, inner xsep=0.080cm, inner ysep=0.085cm, rounded corners=0.020cm] at (19.25,12.75) {S5};
+\end{circuitikz}
+}%
+\label{system figure}
+\caption{S1 $\rightarrow$ Laser at 1064 nm\\}
+\end{figure}
+\newpage
+\theendnotes
+\bibliographystyle{plain}
+\bibliography{theory}
+\end{document}
