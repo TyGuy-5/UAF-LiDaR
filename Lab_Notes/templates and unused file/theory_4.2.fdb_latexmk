@@ -1,5 +1,5 @@
 # Fdb version 4
-["bibtex theory_4.2"] 0 "theory_4.2.aux" "theory_4.2.bbl" "theory_4.2" 1781137299.88296 0
+["bibtex theory_4.2"] 0 "theory_4.2.aux" "theory_4.2.bbl" "theory_4.2" 1781137655.21273 0
   "/usr/local/texlive/2026/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
   "theory.bib" 0 -1 0 ""
   "theory_4.2.aux" 0 -1 0 "pdflatex"
@@ -7,7 +7,7 @@
   "theory_4.2.bbl"
   "theory_4.2.blg"
   (rewritten before read)
-["pdflatex"] 1781137298.88925 "/Users/celotta00/Desktop/Alaska/Lab_Notes/templates and unused file/theory_4.2.tex" "theory_4.2.pdf" "theory_4.2" 1781137299.88305 2
+["pdflatex"] 1781137654.19515 "/Users/celotta00/Desktop/Alaska/Lab_Notes/templates and unused file/theory_4.2.tex" "theory_4.2.pdf" "theory_4.2" 1781137655.21284 2
   "/Users/celotta00/Desktop/Alaska/Lab_Notes/templates and unused file/theory_4.2.tex" 1781137298.59536 19735 6d33aedae73fc4af05fb7a0beadeb023 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
@@ -218,10 +218,10 @@
   "/usr/local/texlive/2026/texmf-var/web2c/pdftex/pdflatex.fmt" 1772409757 3636768 9f94d239f422c02416e379a36a852ffd ""
   "/usr/local/texlive/2026/texmf.cnf" 1772409725 577 648cd9f92f9c0eac486f4c71c85cfbbe ""
   "figures/ss1.png" 0 -1 0 ""
-  "theory_4.2.aux" 1781137299.68464 3343 2f844d87cdcd080e2e84114b53969f2d "pdflatex"
+  "theory_4.2.aux" 1781137655.00807 3343 2f844d87cdcd080e2e84114b53969f2d "pdflatex"
   "theory_4.2.bbl" 0 -1 0 "bibtex theory_4.2"
-  "theory_4.2.ent" 1781137299.66913 2765 711a06658d013922bae6e15cdfa0813f "pdflatex"
-  "theory_4.2.out" 1781137299.68503 2174 614c9b7cdc61c99cc8f5411cdbf1ffa6 "pdflatex"
+  "theory_4.2.ent" 1781137654.9923 2765 711a06658d013922bae6e15cdfa0813f "pdflatex"
+  "theory_4.2.out" 1781137655.00848 2174 614c9b7cdc61c99cc8f5411cdbf1ffa6 "pdflatex"
   "theory_4.2.tex" 1781137298.59536 19735 6d33aedae73fc4af05fb7a0beadeb023 ""
   (generated)
   "theory_4.2.aux"
