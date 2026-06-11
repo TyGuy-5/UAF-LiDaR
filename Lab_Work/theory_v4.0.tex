@@ -76,7 +76,7 @@ z_0=\frac{\pi \omega_0^2}{\lambda}
     \theta=\frac{\lambda}{\pi \omega_0}
 \end{equation}
 \begin{center}
-    \includegraphics[width=0.3\linewidth]{Screenshot 2026-06-02 at 13.18.55.png}
+    \includegraphics[width=0.3\linewidth]{figures/Screenshot 2026-06-02 at 13.18.55.png}
 \end{center}
 
 \textbf{Confocal Parameter ($b$):} The confocal parameter uses the Rayleigh range to quantify the useful depth of focus---it is ``the total length of the focused region around the beam waist.''\cite{RPz_0}
@@ -333,6 +333,47 @@ proving Eq.~\ref{22}, where $\alpha^2 = \frac{f^2}{(d_1-f)^2+z_{01}^2}$ follows 
 \label{fig:system}
 \end{figure}
 
+\newpage
+\section{Operating Instructions}
+\subsection{Prerequisites}
+\begin{itemize}
+    \item Ensure curtains are closed and laser indicator is on outside the lab.
+    \item Take off all jewlery and don appropriate laser safety goggles.
+    \item Verify the beam path is clear of obstructions and that all optical components are securely mounted.
+    \item Verify the power meter is aligned and is propperly rated for the expected power levels, default to 500~mW.
+    \item Intiaite approprite music... a good fall back is Led Zepplin, Black Sabith, or AC/DC. 
+\end{itemize}
+
+\subsection{Diode Initialization}
+\begin{enumerate}
+    \item Turn on the diode, ilx, it is located on the top shelf on the far right, it is blue.
+    \item Check the current and temperature settings on the diode controller, Temp should be $19.5^{\circ}$C and Current should be $165$~mA.
+    \item Turn on the temperature via TEC controler, push ON.
+    \item Turn on the current via the controller, push ON.
+\end{enumerate}
+\subsection{PPLN Initialization}
+\begin{enumerate}
+    \item Verify HCP is set to 59.5$^{\circ}$C, then turn on the PPLN temperature controller.
+\end{enumerate}
+\begin{center}
+    \textbf{PUT ON SAFETY GOGGLES BEFORE PROCEEDING FURTHER}
+\end{center}
+\subsection{Amplifier Initialization}
+\begin{enumerate}
+    \item Turn on the amplifier, but leave the key switched off for now.
+    \item Verify the amplifier settings: the current should be set to $20$~mA.
+    \item Turn on the amplifier key switch, then wait for system to boot through serial number and loading screens.
+    \item Turn on the amplifier output by turning the dial to highlight \textit{START}, then push the dial in.
+\end{enumerate}
+
+\subsection{How to Shut Down the Laser System}
+\begin{enumerate}
+    \item Turn the key to off on the amplifier and then shut it down.
+    \item Flip the current off and then the TEC peltier device off.
+    \item Turn off the crystal heater
+\end{enumerate}
+\subsection{Troubleshooting}
+Placeholder for troubleshooting instructions.
 \newpage
 \theendnotes
 \bibliographystyle{plain}
