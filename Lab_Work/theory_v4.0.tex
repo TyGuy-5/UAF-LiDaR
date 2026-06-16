@@ -5,6 +5,7 @@
 \usepackage{amsmath, amssymb, amsthm}
 \usepackage{graphicx}
 \usepackage{circuitikz}
+\usetikzlibrary{decorations.pathreplacing}
 \usepackage{hyperref}
 \usepackage{endnotes}
 \let\footnote=\endnote
@@ -293,46 +294,139 @@ proving Eq.~\ref{22}, where $\alpha^2 = \frac{f^2}{(d_1-f)^2+z_{01}^2}$ follows 
     \end{enumerate}
 \end{enumerate}
 
-\begin{figure}[!ht]
-\centering
-\resizebox{\textwidth}{!}{%
-\begin{circuitikz}
-\tikzstyle{every node}=[font=\fontsize{18.2pt}{23.7pt}\selectfont]
-\draw (8.125,13.75) to[short] (10.125,13.75);
-\draw (8.125,13.75) to[short] (8.125,11.875);
-\draw (8.125,11.875) to[short] (10.125,11.875);
-\draw (10.125,11.875) to[short] (10.125,13.75);
-\draw (11.5,13.75) to[short] (13.5,13.75);
-\draw (11.5,13.75) to[short] (11.5,11.875);
-\draw (11.5,11.875) to[short] (13.5,11.875);
-\draw (13.5,13.75) to[short] (13.5,11.875);
-\draw (14.875,13.75) to[short] (14.875,11.875);
-\draw (14.875,11.875) to[short] (16.875,11.875);
-\draw (16.875,11.875) to[short] (16.875,13.75);
-\draw (14.875,13.75) to[short] (16.875,13.75);
-\draw (18.25,13.75) to[short] (20.25,13.75);
-\draw (6.75,13.75) to[short] (4.75,13.75);
-\draw (4.75,13.75) to[short] (4.75,11.875);
-\draw (4.75,11.875) to[short] (6.75,11.875);
-\draw (6.75,11.875) to[short] (6.75,13.75);
-\draw (18.25,13.75) to[short] (18.25,11.875);
-\draw (18.25,11.875) to[short] (20.25,11.875);
-\draw (20.25,11.875) to[short] (20.25,13.75);
-\node [font=\fontsize{18.2pt}{23.7pt}\selectfont, inner xsep=0.080cm, inner ysep=0.085cm, rounded corners=0.020cm] at (5.75,12.75) {S1};
-\node [font=\fontsize{18.2pt}{23.7pt}\selectfont, inner xsep=0.080cm, inner ysep=0.085cm, rounded corners=0.020cm] at (9.125,12.75) {S2};
-\node [font=\fontsize{18.2pt}{23.7pt}\selectfont, inner xsep=0.080cm, inner ysep=0.085cm, rounded corners=0.020cm] at (12.5,12.75) {S3};
-\node [font=\fontsize{18.2pt}{23.7pt}\selectfont, inner xsep=0.080cm, inner ysep=0.085cm, rounded corners=0.020cm] at (15.875,12.75) {S4};
-\node [font=\fontsize{18.2pt}{23.7pt}\selectfont, inner xsep=0.080cm, inner ysep=0.085cm, rounded corners=0.020cm] at (19.25,12.75) {S5};
-\end{circuitikz}
-}
-\caption{S1: Laser at 1064\,nm.
-         S2: [Component --- fill in].
-         S3: [Component --- fill in].
-         S4: [Component --- fill in].
-         S5: [Component --- fill in].}
-\label{fig:system}
-\end{figure}
+\begin{figure}[h]
+    \centering
+    \resizebox{\textwidth}{!}{
+    \begin{tikzpicture}[font=\sffamily]
+        
+        % ---------------------------------------------------
+        % 1. Boxes and Shapes
+        % ---------------------------------------------------
+        
+        % i. Left box
+        \draw[very thick] (0, -0.6) rectangle (0.8, 0.6);
+        \node at (0.25, -0.4) {j.};
+        
+        % h. Prism / Beam Splitter (Right-angled triangle)
+        % Hypotenuse acts as a 45-degree mirror for the green laser
+        \draw[very thick] (1.2, 0.4) -- (1.2, -0.4) -- (2.0, -0.4) -- cycle;
+        \node at (1.45, -0.2) {i.};
+        
+        % j. Top box
+        \draw[very thick] (1.1, 1.5) rectangle (2.1, 2.1);
+        \node at (1.3, 1.8) {k.};
+        
+        % g. Long box
+        \draw[very thick] (2.8, -0.5) rectangle (6.6, 0.5);
+        \node at (3.0, -0.3) {h.};
+        
+        % Dark inner channel in g
+        \draw[line width=4pt, black!85] (2.8, 0) -- (6.6, 0); 
+        
+        % e. Lens (Plano-convex facing left)
+        % Arc draws the curved left side, flat side is on the right
+        \draw[very thick] (7.4, -0.3) arc (270:90:0.15 and 0.3) -- cycle;
+        \node at (7.4, 0.6) {g.}; % Moved up to avoid brace overlap
+        
+        % f. Small middle box
+        \draw[very thick] (8.2, -0.3) rectangle (10.5, 0.3);
+        \node at (8.4, -0.1) {f.};
+        
+        % e. Square box (lower middle)
+        \draw[very thick] (11.5, -2.0) rectangle (13.8, 0.3);
+        \node at (11.7, -1.8) {e.};
+        
+        % a. Large Top Right Box
+        \draw[very thick] (11.5, 1.3) rectangle (19.0, 3.5);
+        \node at (11.8, 1.5) {a.};
+        % Inner rectangles inside a.
+        \draw[thick] (12.2, 2.7) rectangle (13.7, 3.2);
+        \draw[thick] (14.5, 2.7) rectangle (16.0, 3.2);
+        \draw[thick] (16.8, 2.7) rectangle (18.3, 3.2);
+        
+        % c. Thick Circle / Fiber Spool
+        \draw[line width=2.5pt] (17.8, -0.8) circle (1.2cm);
+        \node at (17.8, -0.8) {c.};
 
+        % d. Large Bottom Right Box
+        \draw[very thick] (11.5, -4.5) rectangle (19.0, -2.5);
+        \node at (18.7, -2.7) {d.};
+        
+        % b. Vertical Box
+        \draw[very thick] (19.8, -0.2) rectangle (20.5, 2.5);
+        \node at (20.15, 0) {b.};
+
+
+        % ---------------------------------------------------
+        % 2. Optical Paths (Red and Green Lines)
+        % ---------------------------------------------------
+        
+        % Red Path (Straight through from i to f)
+        % Shifted minutely down so it forms a two-tone line with the green laser
+        \draw[red, thick] (0.8, -0.015) -- (8.2, -0.015);
+
+        % Green Path (Down from j, bounces right off h)
+        % Shifted minutely up so both colors are visible overlapping the black channel
+        \draw[green!70!black, thick] (1.6, 1.5) -- (1.6, 0.015) -- (6.6, 0.015);
+
+
+        % ---------------------------------------------------
+        % 3. Electrical / Fiber Connections (Black Wires)
+        % ---------------------------------------------------
+        
+        % Wire from g up and splitting into a and square e
+        \draw[thick] (4.0, 0.5) -- (4.0, 1.0) -- (12.5, 1.0);
+        \draw[thick] (12.5, 1.0) -- (12.5, 0.3); % Down to box e
+        
+        % Wavy Wire 2 from f to d
+        \draw[thick] (10.5, 0) to[out=0, in=180] (11.0, -1.7) to[out=0, in=180] (11.5, -3.5);
+        
+        % Wire from a to b
+        \draw[thick] (19.0, 2.7) -- (20.15, 2.7) -- (20.15, 2.5);
+        
+        % Fiber Loop 1 (b -> spool c -> d)
+        % Entering spool area from bottom of b
+        \draw[thick] (20.15, -0.2) .. controls (20.15, -1.5) and (19.0, -2.0) .. (17.8, -2.0);
+        % Leaving spool area to d, crossing the previous curve
+        \draw[thick] (18.9, -.3) .. controls (20.0, -1.8) and (20.0, -3.5) .. (19.0, -3.5);
+
+
+        % ---------------------------------------------------
+        % 4. Labels, Numbers, and Braces
+        % ---------------------------------------------------
+        
+        % Distances (Above gaps)
+        \draw[thick, decorate, decoration={brace, amplitude=4pt}] (6.67, 0.05) -- (7.18, 0.05) node[midway, above=3pt] {d$_2$};
+        \draw[thick, decorate, decoration={brace, amplitude=4pt}] (7.5, 0.05) -- (8.12, 0.05) node[midway, above=3pt] {d$_1$};
+        
+        % Numbers
+        \node at (1.0, 0.3) {4.};
+        \node at (1.9, 1.0) {5.};
+        \node at (8.0, -0.2) {3.};
+        \node at (10.0, -1.5) {2.};
+        \node at (21.0, -1.5) {1.};
+
+    \end{tikzpicture}
+    }
+    \vspace{0.5cm} % Adds a little breathing room
+    \renewcommand{\arraystretch}{1.2} % Spaces out the rows slightly
+    \small % Reduces font size for the legend
+    \begin{tabular}{@{}ll | ll@{}}
+        \textbf{1.} & 1064\,nm laser beam (fiber)           & \textbf{a.} & Laser power source \\
+        \textbf{2.} & Amplified 1064\,nm laser beam (fiber) & \textbf{b.} & 1064\,nm laser \\
+        \textbf{3.} & 1064\,nm laser                        & \textbf{c.} & Spool of fiber \\
+        \textbf{4.} & 1064\,nm laser                        & \textbf{d.} & Amplifier \\
+        \textbf{5.} & 532\,nm laser                         & \textbf{e.} & Crystal warmer \\
+                    &                                       & \textbf{f.} & Collimator \\
+                    &                                       & \textbf{g.} & Focusing lens \\
+                    &                                       & \textbf{h.} & Crystal housing \\
+                    &                                       & \textbf{i.} & Beam splitter \\
+                    &                                       & \textbf{j.} & Beam stopper \\
+                    &                                       & \textbf{k.} & Power meter \\
+    \end{tabular}
+    \vspace{0.3cm}
+    \caption{Experimental setup and component legend.} 
+\end{figure}
 \newpage
 \section{Operating Instructions}
 \subsection{Prerequisites}
