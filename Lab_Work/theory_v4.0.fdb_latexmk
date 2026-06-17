@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex theory_v4.0"] 1781304145.25581 "theory_v4.0.aux" "theory_v4.0.bbl" "theory_v4.0" 1781655980.89851 0
+["bibtex theory_v4.0"] 1781304145.25581 "theory_v4.0.aux" "theory_v4.0.bbl" "theory_v4.0" 1781656462.37218 0
   "./theory.bib" 1781152600 2121 0a81f84da453f6323836da7a5d7280c3 ""
   "/usr/local/texlive/2026/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "theory_v4.0.aux" 1781655980.65666 4100 02725ba76fa2dee4f737f85aab78203d "pdflatex"
+  "theory_v4.0.aux" 1781656462.11502 4100 02725ba76fa2dee4f737f85aab78203d "pdflatex"
   (generated)
   "theory_v4.0.bbl"
   "theory_v4.0.blg"
   (rewritten before read)
-["pdflatex"] 1781655979.88934 "/Users/celotta00/Desktop/Alaska/Lab_Work/theory_v4.0.tex" "theory_v4.0.pdf" "theory_v4.0" 1781655980.89857 0
-  "/Users/celotta00/Desktop/Alaska/Lab_Work/theory_v4.0.tex" 1781655979.36155 25895 c0b9258b6e34bb1b6c450099433979c5 ""
+["pdflatex"] 1781656461.27068 "/Users/celotta00/Desktop/Alaska/Lab_Work/theory_v4.0.tex" "theory_v4.0.pdf" "theory_v4.0" 1781656462.37231 0
+  "/Users/celotta00/Desktop/Alaska/Lab_Work/theory_v4.0.tex" 1781656461.04838 25875 d373c3ce0964f96be417f7ed8b05d795 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -217,11 +217,11 @@
   "figures/Screenshot 2026-06-02 at 13.18.55.png" 1781152600 84617 3f5b28e62a67c83d22f5be627423555f ""
   "figures/download.png" 1781152600 39285 eee3351c2c42830374fe2feca8de7e43 ""
   "figures/ss1.png" 1781152600 52639 1133f3548c1d59afd540d79fe513228a ""
-  "theory_v4.0.aux" 1781655980.65666 4100 02725ba76fa2dee4f737f85aab78203d "pdflatex"
+  "theory_v4.0.aux" 1781656462.11502 4100 02725ba76fa2dee4f737f85aab78203d "pdflatex"
   "theory_v4.0.bbl" 1781142735.28324 1140 ee99a67bc15437997b03e3061784a156 "bibtex theory_v4.0"
-  "theory_v4.0.ent" 1781655980.62949 2765 711a06658d013922bae6e15cdfa0813f "pdflatex"
-  "theory_v4.0.out" 1781655980.65711 3326 aa7a6aa613b30e218f386427bea86fc7 "pdflatex"
-  "theory_v4.0.tex" 1781655979.36155 25895 c0b9258b6e34bb1b6c450099433979c5 ""
+  "theory_v4.0.ent" 1781656462.08633 2765 711a06658d013922bae6e15cdfa0813f "pdflatex"
+  "theory_v4.0.out" 1781656462.11557 3326 aa7a6aa613b30e218f386427bea86fc7 "pdflatex"
+  "theory_v4.0.tex" 1781656461.04838 25875 d373c3ce0964f96be417f7ed8b05d795 ""
   (generated)
   "theory_v4.0.aux"
   "theory_v4.0.ent"
