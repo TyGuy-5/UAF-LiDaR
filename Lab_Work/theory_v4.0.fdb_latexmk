@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex theory_v4.0"] 1781304145.25581 "theory_v4.0.aux" "theory_v4.0.bbl" "theory_v4.0" 1781727650.97121 0
+["bibtex theory_v4.0"] 1781912433.66724 "theory_v4.0.aux" "theory_v4.0.bbl" "theory_v4.0" 1781912437.37676 0
   "./theory.bib" 1781221143.17134 2121 0a81f84da453f6323836da7a5d7280c3 ""
   "/usr/local/texlive/2025/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "theory_v4.0.aux" 1781727649.62333 4100 02725ba76fa2dee4f737f85aab78203d "pdflatex"
+  "theory_v4.0.aux" 1781912436.55114 4590 f351ddb20f63ee1886d86c7589675ca9 "pdflatex"
   (generated)
   "theory_v4.0.bbl"
   "theory_v4.0.blg"
   (rewritten before read)
-["pdflatex"] 1781727646.18658 "/Users/tylercelotta/Desktop/UAF/UAF-LiDaR/Lab_Work/theory_v4.0.tex" "theory_v4.0.pdf" "theory_v4.0" 1781727650.97157 0
-  "/Users/tylercelotta/Desktop/UAF/UAF-LiDaR/Lab_Work/theory_v4.0.tex" 1781727645.15537 25875 d373c3ce0964f96be417f7ed8b05d795 ""
+["pdflatex"] 1781912434.05597 "/Users/tylercelotta/Desktop/UAF/UAF-LiDaR/Lab_Work/theory_v4.0.tex" "theory_v4.0.pdf" "theory_v4.0" 1781912437.3771 0
+  "/Users/tylercelotta/Desktop/UAF/UAF-LiDaR/Lab_Work/theory_v4.0.tex" 1781912434.09682 36476 385de3dadaec235c3f8387150ce43f16 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -174,6 +174,7 @@
   "/usr/local/texlive/2025/texmf-dist/tex/latex/base/atbegshi-ltx.sty" 1738182759 2963 d8ec5a1b4e0a106c5c737900202763e4 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/base/atveryend-ltx.sty" 1738182759 2378 14b657ee5031da98cf91648f19642694 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/base/size11.clo" 1738182759 8464 e73911cdcc738e82d6adccd28e654bb1 ""
+  "/usr/local/texlive/2025/texmf-dist/tex/latex/booktabs/booktabs.sty" 1579038678 6078 f1cb470c9199e7110a27851508ed7a5c ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/circuitikz/circuitikz.sty" 1736550187 13737 28b879275e5964b84f520a68715187ff ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/endnotes/endnotes.sty" 1578175499 15260 abf1c7ea1ba9706c69d80d6987c0fb71 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty" 1579991033 13886 d1306dcf79a944f6988e688c1785f9ce ""
@@ -210,6 +211,7 @@
   "/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty" 1601326656 325 f9f16d12354225b7dd52a3321f085955 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/refcount/refcount.sty" 1576624809 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1657483315 9714 ba3194bd52c8499b3f1e3eb91d409670 ""
+  "/usr/local/texlive/2025/texmf-dist/tex/latex/tools/longtable.sty" 1730496337 15900 3cb191e576c7a313634d2813c55d4bf1 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/url/url.sty" 1388531844 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/xcolor/xcolor.sty" 1727642399 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "/usr/local/texlive/2025/texmf-dist/web2c/texmf.cnf" 1739380943 42148 61becc7c670cd061bb319c643c27fdd4 ""
@@ -221,11 +223,11 @@
   "figures/Screenshot 2026-06-02 at 13.18.55.png" 1781221143.1681 84617 3f5b28e62a67c83d22f5be627423555f ""
   "figures/download.png" 1781221143.1701 39285 eee3351c2c42830374fe2feca8de7e43 ""
   "figures/ss1.png" 1781221143.17103 52639 1133f3548c1d59afd540d79fe513228a ""
-  "theory_v4.0.aux" 1781727649.62333 4100 02725ba76fa2dee4f737f85aab78203d "pdflatex"
-  "theory_v4.0.bbl" 1781304145.58787 1140 ee99a67bc15437997b03e3061784a156 "bibtex theory_v4.0"
-  "theory_v4.0.ent" 1781727649.53498 2765 711a06658d013922bae6e15cdfa0813f "pdflatex"
-  "theory_v4.0.out" 1781727649.6262 3326 aa7a6aa613b30e218f386427bea86fc7 "pdflatex"
-  "theory_v4.0.tex" 1781727645.15537 25875 d373c3ce0964f96be417f7ed8b05d795 ""
+  "theory_v4.0.aux" 1781912436.55114 4590 f351ddb20f63ee1886d86c7589675ca9 "pdflatex"
+  "theory_v4.0.bbl" 1781912434.04612 1140 ee99a67bc15437997b03e3061784a156 "bibtex theory_v4.0"
+  "theory_v4.0.ent" 1781912436.4748 2765 711a06658d013922bae6e15cdfa0813f "pdflatex"
+  "theory_v4.0.out" 1781912436.55274 3539 4e052c3cab8e86c1aad550d79d22368b "pdflatex"
+  "theory_v4.0.tex" 1781912434.09682 36476 385de3dadaec235c3f8387150ce43f16 ""
   (generated)
   "theory_v4.0.aux"
   "theory_v4.0.ent"

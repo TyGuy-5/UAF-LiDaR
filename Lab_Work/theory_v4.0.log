@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  17 JUN 2026 12:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  19 JUN 2026 15:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -502,57 +502,94 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
 \Hy@SectionHShift=\skip57
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2024-10-27 v4.22 Multi-page Table package (DPC)
+\LTleft=\skip58
+\LTright=\skip59
+\LTpre=\skip60
+\LTpost=\skip61
+\LTchunksize=\count323
+\LTcapwidth=\dimen301
+\LT@head=\box67
+\LT@firsthead=\box68
+\LT@foot=\box69
+\LT@lastfoot=\box70
+\LT@gbox=\box71
+\LT@cols=\count324
+\LT@rows=\count325
+\c@LT@tables=\count326
+\c@LT@chunks=\count327
+\LT@p@ftn=\toks42
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen302
+\lightrulewidth=\dimen303
+\cmidrulewidth=\dimen304
+\belowrulesep=\dimen305
+\belowbottomsep=\dimen306
+\aboverulesep=\dimen307
+\abovetopsep=\dimen308
+\cmidrulesep=\dimen309
+\cmidrulekern=\dimen310
+\defaultaddspace=\dimen311
+\@cmidla=\count328
+\@cmidlb=\count329
+\@aboverulesep=\dimen312
+\@belowrulesep=\dimen313
+\@thisruleclass=\count330
+\@lastruleclass=\count331
+\@thisrulewidth=\dimen314
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/endnotes/endnotes.sty
 Package: endnotes 2020-01-02 endnotes package
-\c@endnote=\count323
-\endnotesep=\dimen301
+\c@endnote=\count332
+\endnotesep=\dimen315
 \@enotes=\write4
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
-\f@nch@headwidth=\skip58
-\f@nch@offset@elh=\skip59
-\f@nch@offset@erh=\skip60
-\f@nch@offset@olh=\skip61
-\f@nch@offset@orh=\skip62
-\f@nch@offset@elf=\skip63
-\f@nch@offset@erf=\skip64
-\f@nch@offset@olf=\skip65
-\f@nch@offset@orf=\skip66
-\f@nch@height=\skip67
-\f@nch@footalignment=\skip68
-\f@nch@widthL=\skip69
-\f@nch@widthC=\skip70
-\f@nch@widthR=\skip71
-\@temptokenb=\toks42
+\f@nch@headwidth=\skip62
+\f@nch@offset@elh=\skip63
+\f@nch@offset@erh=\skip64
+\f@nch@offset@olh=\skip65
+\f@nch@offset@orh=\skip66
+\f@nch@offset@elf=\skip67
+\f@nch@offset@erf=\skip68
+\f@nch@offset@olf=\skip69
+\f@nch@offset@orf=\skip70
+\f@nch@height=\skip71
+\f@nch@footalignment=\skip72
+\f@nch@widthL=\skip73
+\f@nch@widthC=\skip74
+\f@nch@widthR=\skip75
+\@temptokenb=\toks43
 )
-\c@theorem=\count324
-\c@hypothesis=\count325
-\c@definition=\count326
+\c@theorem=\count333
+\c@hypothesis=\count334
+\c@definition=\count335
  (/usr/local/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count327
-\l__pdf_internal_box=\box67
+\l__color_backend_stack_int=\count336
+\l__pdf_internal_box=\box72
 ) (./theory_v4.0.aux)
 \openout1 = `theory_v4.0.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -590,55 +627,55 @@ LaTeX Font Info:    ... okay on input line 31.
 
 (/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count328
-\scratchdimen=\dimen302
-\scratchbox=\box68
-\nofMPsegments=\count329
-\nofMParguments=\count330
-\everyMPshowfont=\toks43
-\MPscratchCnt=\count331
-\MPscratchDim=\dimen303
-\MPnumerator=\count332
-\makeMPintoPDFobject=\count333
-\everyMPtoPDFconversion=\toks44
+\scratchcounter=\count337
+\scratchdimen=\dimen316
+\scratchbox=\box73
+\nofMPsegments=\count338
+\nofMParguments=\count339
+\everyMPshowfont=\toks44
+\MPscratchCnt=\count340
+\MPscratchDim=\dimen317
+\MPnumerator=\count341
+\makeMPintoPDFobject=\count342
+\everyMPtoPDFconversion=\toks45
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 31.
+Package hyperref Info: Link coloring OFF on input line 33.
  (./theory_v4.0.out) (./theory_v4.0.out)
 \@outlinefile=\write5
 \openout5 = `theory_v4.0.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 34.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 36.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 34.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 36.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<figures/Picture1en-us.jpg, id=83, 392.96812pt x 277.035pt>
+<figures/Picture1en-us.jpg, id=87, 392.96812pt x 277.035pt>
 File: figures/Picture1en-us.jpg Graphic file (type jpg)
 <use figures/Picture1en-us.jpg>
-Package pdftex.def Info: figures/Picture1en-us.jpg  used on input line 53.
+Package pdftex.def Info: figures/Picture1en-us.jpg  used on input line 55.
 (pdftex.def)             Requested size: 117.43875pt x 82.78987pt.
 
 
 [1
 
 {/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-<figures/download.png, id=109, 400.3758pt x 298.4751pt>
+<figures/download.png, id=113, 400.3758pt x 298.4751pt>
 File: figures/download.png Graphic file (type png)
 <use figures/download.png>
-Package pdftex.def Info: figures/download.png  used on input line 62.
+Package pdftex.def Info: figures/download.png  used on input line 64.
 (pdftex.def)             Requested size: 187.89914pt x 140.07837pt.
-<figures/Screenshot 2026-06-02 at 13.18.55.png, id=113, 512.91624pt x 437.635pt>
+<figures/Screenshot 2026-06-02 at 13.18.55.png, id=117, 512.91624pt x 437.635pt>
 File: figures/Screenshot 2026-06-02 at 13.18.55.png Graphic file (type png)
 <use figures/Screenshot 2026-06-02 at 13.18.55.png>
-Package pdftex.def Info: figures/Screenshot 2026-06-02 at 13.18.55.png  used on input line 80.
+Package pdftex.def Info: figures/Screenshot 2026-06-02 at 13.18.55.png  used on input line 82.
 (pdftex.def)             Requested size: 140.92793pt x 120.2398pt.
 
 
@@ -648,59 +685,59 @@ Package pdftex.def Info: figures/Screenshot 2026-06-02 at 13.18.55.png  used on 
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 110.
+(hyperref)                removing `math shift' on input line 112.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 110.
+(hyperref)                removing `math shift' on input line 112.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 110.
+(hyperref)                removing `\@ifnextchar' on input line 112.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 119.
+(hyperref)                removing `math shift' on input line 121.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 119.
+(hyperref)                removing `math shift' on input line 121.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 119.
+(hyperref)                removing `\@ifnextchar' on input line 121.
 
 
 
 [3 <./figures/Screenshot 2026-06-02 at 13.18.55.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 128.
+(hyperref)                removing `math shift' on input line 130.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 128.
+(hyperref)                removing `math shift' on input line 130.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 128.
+(hyperref)                removing `\@ifnextchar' on input line 130.
 
 
 
 [4]
 
 [5]
-Overfull \hbox (18.7884pt too wide) in paragraph at lines 237--240
+Overfull \hbox (18.7884pt too wide) in paragraph at lines 239--242
 \OT1/cmr/m/n/10.95 Multiplying nu-mer-a-tor and de-nom-i-na-tor by the com-plex con-ju-gate of the de-nom-i-na-tor, $[] +
  []
 
 
 
 [6]
-<TP-Graph-4.png.png, id=193, 301.8778pt x 148.30406pt>
+<TP-Graph-4.png.png, id=197, 301.8778pt x 148.30406pt>
 File: TP-Graph-4.png.png Graphic file (type png)
 <use TP-Graph-4.png.png>
-Package pdftex.def Info: TP-Graph-4.png.png  used on input line 290.
+Package pdftex.def Info: TP-Graph-4.png.png  used on input line 292.
 (pdftex.def)             Requested size: 209.14496pt x 102.74628pt.
 
 
@@ -708,41 +745,103 @@ Package pdftex.def Info: TP-Graph-4.png.png  used on input line 290.
 
 [8]
 
-[9] (./theory_v4.0.ent
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 478--478
+[]|\OT1/cmr/bx/n/10.95 Part Num-
+ []
+
+
+Overfull \hbox (0.51079pt too wide) in alignment at lines 475--480
+ [] [] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 484--484
+[]|\OT1/cmr/bx/n/10.95 Part Num-
+ []
+
+
+Overfull \hbox (0.51079pt too wide) in alignment at lines 480--486
+ [] [] [] 
+ []
+
+
+Overfull \hbox (0.51079pt too wide) in alignment at lines 486--489
+ [] [] [] 
+ []
+
+
+Overfull \hbox (0.51079pt too wide) in alignment at lines 489--492
+ [] [] [] 
+ []
+
+
+Underfull \hbox (badness 5008) in paragraph at lines 618--619
+[]|\OT1/cmr/m/n/10.95 SM1-Threaded Adapters for Cylin-dri-cal
+ []
+
+
+Underfull \hbox (badness 5008) in paragraph at lines 619--620
+[]|\OT1/cmr/m/n/10.95 SM1-Threaded Adapters for Cylin-dri-cal
+ []
+
+
+Underfull \hbox (badness 5008) in paragraph at lines 620--621
+[]|\OT1/cmr/m/n/10.95 SM1-Threaded Adapters for Cylin-dri-cal
+ []
+
+
+Underfull \hbox (badness 5008) in paragraph at lines 621--622
+[]|\OT1/cmr/m/n/10.95 SM1-Threaded Adapters for Cylin-dri-cal
+ []
+
+
+Underfull \hbox (badness 1946) in paragraph at lines 644--644
+[]|$\U/msb/m/n/10.95 ?\OT1/cmr/m/n/10.95 0\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 25[]$ Adapter, 3.5 mm Max
+ []
+
+
+Overfull \hbox (0.51079pt too wide) in alignment at lines 492--661
+ [] [] [] 
+ []
+
+[10] [11] [12] (./theory_v4.0.ent
+
+[13]
 Underfull \hbox (badness 10000) in paragraph at lines 318--343
 
  []
 
-<figures/ss1.png, id=238, 726.715pt x 363.3575pt>
+<figures/ss1.png, id=261, 726.715pt x 363.3575pt>
 File: figures/ss1.png Graphic file (type png)
 <use figures/ss1.png>
 Package pdftex.def Info: figures/ss1.png  used on input line 346.
 (pdftex.def)             Requested size: 234.8775pt x 117.43555pt.
 ) (./theory_v4.0.bbl
 
-[10 <./figures/ss1.png>])
+[14 <./figures/ss1.png>])
 
-[11] (./theory_v4.0.aux)
+[15] (./theory_v4.0.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `theory_v4.0.out' has not changed.
-(rerunfilecheck)             Checksum: AA7A6AA613B30E218F386427BEA86FC7;3326.
+(rerunfilecheck)             Checksum: 4E052C3CAB8E86C1AAD550D79D22368B;3539.
  ) 
 Here is how much of TeX's memory you used:
- 39943 strings out of 473190
- 954339 string characters out of 5715801
- 1584939 words of memory out of 5000000
- 62667 multiletter control sequences out of 15000+600000
+ 40126 strings out of 473190
+ 957133 string characters out of 5715801
+ 1667328 words of memory out of 5000000
+ 62836 multiletter control sequences out of 15000+600000
  572352 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,14n,105p,1305b,709s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on theory_v4.0.pdf (11 pages, 482065 bytes).
+Output written on theory_v4.0.pdf (15 pages, 491404 bytes).
 PDF statistics:
- 376 PDF objects out of 1000 (max. 8388607)
- 305 compressed objects within 4 object streams
- 95 named destinations out of 1000 (max. 500000)
- 190 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 399 PDF objects out of 1000 (max. 8388607)
+ 324 compressed objects within 4 object streams
+ 101 named destinations out of 1000 (max. 500000)
+ 198 words of extra memory for PDF output out of 10000 (max. 10000000)
 
