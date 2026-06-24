@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  19 JUN 2026 16:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  23 JUN 2026 14:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -657,7 +657,7 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 36.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<figures/Picture1en-us.jpg, id=87, 392.96812pt x 277.035pt>
+<figures/Picture1en-us.jpg, id=111, 392.96812pt x 277.035pt>
 File: figures/Picture1en-us.jpg Graphic file (type jpg)
 <use figures/Picture1en-us.jpg>
 Package pdftex.def Info: figures/Picture1en-us.jpg  used on input line 55.
@@ -667,12 +667,12 @@ Package pdftex.def Info: figures/Picture1en-us.jpg  used on input line 55.
 [1
 
 {/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-<figures/download.png, id=113, 400.3758pt x 298.4751pt>
+<figures/download.png, id=137, 400.3758pt x 298.4751pt>
 File: figures/download.png Graphic file (type png)
 <use figures/download.png>
 Package pdftex.def Info: figures/download.png  used on input line 64.
 (pdftex.def)             Requested size: 187.89914pt x 140.07837pt.
-<figures/Screenshot 2026-06-02 at 13.18.55.png, id=117, 512.91624pt x 437.635pt>
+<figures/Screenshot 2026-06-02 at 13.18.55.png, id=141, 512.91624pt x 437.635pt>
 File: figures/Screenshot 2026-06-02 at 13.18.55.png Graphic file (type png)
 <use figures/Screenshot 2026-06-02 at 13.18.55.png>
 Package pdftex.def Info: figures/Screenshot 2026-06-02 at 13.18.55.png  used on input line 82.
@@ -734,7 +734,7 @@ Overfull \hbox (18.7884pt too wide) in paragraph at lines 239--242
 
 
 [6]
-<TP-Graph-4.png.png, id=197, 301.8778pt x 148.30406pt>
+<TP-Graph-4.png.png, id=221, 301.8778pt x 148.30406pt>
 File: TP-Graph-4.png.png Graphic file (type png)
 <use TP-Graph-4.png.png>
 Package pdftex.def Info: TP-Graph-4.png.png  used on input line 292.
@@ -746,92 +746,96 @@ Package pdftex.def Info: TP-Graph-4.png.png  used on input line 292.
 [8]
 
 [9]
-Overfull \hbox (0.51079pt too wide) in alignment at lines 475--479
+
+[10]
+
+[11]
+Overfull \hbox (0.51079pt too wide) in alignment at lines 495--499
  [] [] [] 
  []
 
 
-Overfull \hbox (0.51079pt too wide) in alignment at lines 479--485
+Overfull \hbox (0.51079pt too wide) in alignment at lines 499--505
  [] [] [] 
  []
 
 
-Overfull \hbox (0.51079pt too wide) in alignment at lines 485--488
+Overfull \hbox (0.51079pt too wide) in alignment at lines 505--508
  [] [] [] 
  []
 
 
-Overfull \hbox (0.51079pt too wide) in alignment at lines 488--491
+Overfull \hbox (0.51079pt too wide) in alignment at lines 508--511
  [] [] [] 
  []
 
 
-Underfull \hbox (badness 5008) in paragraph at lines 617--618
+Underfull \hbox (badness 5008) in paragraph at lines 637--638
 []|\OT1/cmr/m/n/10.95 SM1-Threaded Adapters for Cylin-dri-cal
  []
 
 
-Underfull \hbox (badness 5008) in paragraph at lines 618--619
+Underfull \hbox (badness 5008) in paragraph at lines 638--639
 []|\OT1/cmr/m/n/10.95 SM1-Threaded Adapters for Cylin-dri-cal
  []
 
 
-Underfull \hbox (badness 5008) in paragraph at lines 619--620
+Underfull \hbox (badness 5008) in paragraph at lines 639--640
 []|\OT1/cmr/m/n/10.95 SM1-Threaded Adapters for Cylin-dri-cal
  []
 
 
-Underfull \hbox (badness 5008) in paragraph at lines 620--621
+Underfull \hbox (badness 5008) in paragraph at lines 640--641
 []|\OT1/cmr/m/n/10.95 SM1-Threaded Adapters for Cylin-dri-cal
  []
 
 
-Underfull \hbox (badness 1946) in paragraph at lines 643--643
+Underfull \hbox (badness 1946) in paragraph at lines 663--663
 []|$\U/msb/m/n/10.95 ?\OT1/cmr/m/n/10.95 0\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 25[]$ Adapter, 3.5 mm Max
  []
 
 
-Overfull \hbox (0.51079pt too wide) in alignment at lines 491--660
+Overfull \hbox (0.51079pt too wide) in alignment at lines 511--680
  [] [] [] 
  []
 
-[10] [11] [12]
+[12] [13] [14]
 
-[13] (./theory_v4.0.ent
+[15] (./theory_v4.0.ent
 Underfull \hbox (badness 10000) in paragraph at lines 318--343
 
  []
 
-<figures/ss1.png, id=261, 726.715pt x 363.3575pt>
+<figures/ss1.png, id=299, 726.715pt x 363.3575pt>
 File: figures/ss1.png Graphic file (type png)
 <use figures/ss1.png>
 Package pdftex.def Info: figures/ss1.png  used on input line 346.
 (pdftex.def)             Requested size: 234.8775pt x 117.43555pt.
 ) (./theory_v4.0.bbl
 
-[14 <./figures/ss1.png>])
+[16 <./figures/ss1.png>])
 
-[15] (./theory_v4.0.aux)
+[17] (./theory_v4.0.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `theory_v4.0.out' has not changed.
-(rerunfilecheck)             Checksum: 77AF54103BFF00DF955B6F6104E28913;3491.
+(rerunfilecheck)             Checksum: 8138716C2DC99FD7E137BDF5C344F818;4635.
  ) 
 Here is how much of TeX's memory you used:
- 40125 strings out of 473190
- 957117 string characters out of 5715801
- 1667252 words of memory out of 5000000
- 62835 multiletter control sequences out of 15000+600000
+ 40144 strings out of 473190
+ 957335 string characters out of 5715801
+ 1667255 words of memory out of 5000000
+ 62842 multiletter control sequences out of 15000+600000
  572352 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,14n,105p,1305b,709s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on theory_v4.0.pdf (15 pages, 490835 bytes).
+Output written on theory_v4.0.pdf (17 pages, 495047 bytes).
 PDF statistics:
- 399 PDF objects out of 1000 (max. 8388607)
- 324 compressed objects within 4 object streams
- 101 named destinations out of 1000 (max. 500000)
- 198 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 439 PDF objects out of 1000 (max. 8388607)
+ 362 compressed objects within 4 object streams
+ 113 named destinations out of 1000 (max. 500000)
+ 246 words of extra memory for PDF output out of 10000 (max. 10000000)
 
