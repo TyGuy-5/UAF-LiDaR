@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex theory_v4.0"] 1782206082.01748 "theory_v4.0.aux" "theory_v4.0.bbl" "theory_v4.0" 1782206083.06372 0
+["bibtex theory_v4.0"] 1782248964.73414 "theory_v4.0.aux" "theory_v4.0.bbl" "theory_v4.0" 1782249400.02567 0
   "./theory.bib" 1781152600 2121 0a81f84da453f6323836da7a5d7280c3 ""
   "/usr/local/texlive/2026/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "theory_v4.0.aux" 1782206082.86276 4590 e415ae238882d3eb141c4a8483f32927 "pdflatex"
+  "theory_v4.0.aux" 1782249399.81612 4337 133f1c630d886ca078b4782ff0c820b1 "pdflatex"
   (generated)
   "theory_v4.0.bbl"
   "theory_v4.0.blg"
   (rewritten before read)
-["pdflatex"] 1782206082.13823 "/Users/celotta00/Desktop/Alaska/Lab_Work/theory_v4.0.tex" "theory_v4.0.pdf" "theory_v4.0" 1782206083.06381 0
-  "/Users/celotta00/Desktop/Alaska/Lab_Work/theory_v4.0.tex" 1782206080.88946 41183 32837153b65e6ed4efa02ee5686aa04f ""
+["pdflatex"] 1782249399.11191 "/Users/celotta00/Desktop/Alaska/Lab_Work/theory_v4.0.tex" "theory_v4.0.pdf" "theory_v4.0" 1782249400.02577 2
+  "/Users/celotta00/Desktop/Alaska/Lab_Work/theory_v4.0.tex" 1782249397.8699 42236 f4e0b1459a799f9638c8882b5d61b490 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -50,6 +50,7 @@
   "/usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb" 1248133631 32298 c6d25bb16d1eac01ebdc6d7084126a1e ""
   "/usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1248133631 30251 6afa5cb1d0204815a708a080681d4674 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
+  "/usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb" 1248133631 37912 77d683123f92148345f3fc36a38d9ab1 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb" 1248133631 37166 8ab3487cbe3ab49ebce74c29ea2418db ""
   "/usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1248133631 35469 70d41d2b9ea31d5d813066df7c99281c ""
   "/usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb" 1248133631 36094 798f80770b3b148ceedd006d487db67c ""
@@ -61,6 +62,8 @@
   "/usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb" 1248133631 33993 9b89b85fd2d9df0482bd47194d1d3bf3 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb" 1248133631 24457 5cbb7bdf209d5d1ce9892a9b80a307cc ""
   "/usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "/usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb" 1248133631 32915 7bf7720c61a5b3a7ff25b0964421c9b6 ""
+  "/usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb" 1248133631 32587 1788b0c1c5b39540c96f5e42ccd6dae8 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1248133631 32626 4f5c1b83753b1dd3a97d1b399a005b4b ""
   "/usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb" 1248133631 32442 c975af247b6702f7ca0c299af3616b80 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb" 1248133631 37944 359e864bd06cde3b1cf57bb20757fb06 ""
@@ -219,11 +222,11 @@
   "figures/Screenshot 2026-06-02 at 13.18.55.png" 1781152600 84617 3f5b28e62a67c83d22f5be627423555f ""
   "figures/download.png" 1781152600 39285 eee3351c2c42830374fe2feca8de7e43 ""
   "figures/ss1.png" 1781152600 52639 1133f3548c1d59afd540d79fe513228a ""
-  "theory_v4.0.aux" 1782206082.86276 4590 e415ae238882d3eb141c4a8483f32927 "pdflatex"
-  "theory_v4.0.bbl" 1782206082.13602 1140 ee99a67bc15437997b03e3061784a156 "bibtex theory_v4.0"
-  "theory_v4.0.ent" 1782206082.83671 2765 711a06658d013922bae6e15cdfa0813f "pdflatex"
-  "theory_v4.0.out" 1782206082.86326 3539 4e052c3cab8e86c1aad550d79d22368b "pdflatex"
-  "theory_v4.0.tex" 1782206080.88946 41183 32837153b65e6ed4efa02ee5686aa04f ""
+  "theory_v4.0.aux" 1782249399.81612 4337 133f1c630d886ca078b4782ff0c820b1 "pdflatex"
+  "theory_v4.0.bbl" 1782248964.81092 1140 ee99a67bc15437997b03e3061784a156 "bibtex theory_v4.0"
+  "theory_v4.0.ent" 1782249399.78992 3941 6acbf864c2ad63b3dd53cfb87b93f854 "pdflatex"
+  "theory_v4.0.out" 1782249399.81657 3539 4e052c3cab8e86c1aad550d79d22368b "pdflatex"
+  "theory_v4.0.tex" 1782249397.8699 42236 f4e0b1459a799f9638c8882b5d61b490 ""
   (generated)
   "theory_v4.0.aux"
   "theory_v4.0.ent"
