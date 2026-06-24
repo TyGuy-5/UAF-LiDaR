@@ -1,0 +1,46 @@
+\begin{thebibliography}{1}
+
+\bibitem{boyd}
+G.~D. Boyd and D.~A. Kleinman.
+\newblock Parametric interaction of focused gaussian light beams.
+\newblock {\em Journal of Applied Physics}, 39(8):3597--3639, 1968.
+
+\bibitem{PPLN}
+{Covesion Ltd.}
+\newblock Technical guide: How to use ppln.
+\newblock Covesion Knowledge Hub, 2026.
+\newblock Accessed: 2026-06-02.
+
+\bibitem{edmund}
+{Edmund Optics}.
+\newblock Gaussian beam propagation, 2026.
+
+\bibitem{hcp}
+{HC Photonics}.
+\newblock Optimal second harmonic generation.
+\newblock Technical document, HC Photonics, August 2017.
+\newblock Accessed: \today.
+
+\bibitem{Osche}
+Gregory~R. Osche.
+\newblock {\em Optical Detection Theory for Laser Applications}.
+\newblock John Wiley \& Sons, 2002.
+
+\bibitem{column}
+R{\"{u}}diger Paschotta.
+\newblock Beam collimators.
+\newblock RP Photonics Encyclopedia.
+\newblock Accessed: 2026-06-02.
+
+\bibitem{RPw_0}
+R{\"u}diger Paschotta.
+\newblock Beam waist.
+\newblock RP Photonics Encyclopedia.
+\newblock Accessed: \today.
+
+\bibitem{RPz_0}
+R{\"{u}}diger Paschotta.
+\newblock Rayleigh length.
+\newblock {\em RP Photonics Encyclopedia}, 2005.
+
+\end{thebibliography}

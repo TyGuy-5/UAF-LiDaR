@@ -1,4 +1,6 @@
 \documentclass[11pt, letterpaper]{article}
+
+% Essential math and formatting packages
 \usepackage[margin=1in]{geometry}
 \usepackage{amsmath, amssymb, amsthm}
 \usepackage{graphicx}
@@ -9,15 +11,21 @@
 \usepackage{booktabs}
 \usepackage{endnotes}
 \let\footnote=\endnote
+
+% Add fancyhdr for persistent page footers
 \usepackage{fancyhdr}
 \pagestyle{fancy}
-\fancyhf{}
-\renewcommand{\headrulewidth}{0pt}
+\fancyhf{} % Clear all default headers and footers
+\renewcommand{\headrulewidth}{0pt} % Remove the header line
 \fancyfoot[L]{\scriptsize \textbf{Key:} $\omega_{01}$: Initial Waist $|$ $\omega_{02}$: Focused Waist $|$ $z_{01}$: Initial Rayleigh Range $|$ $\alpha$: Magnification $|$ $f$: Focal Length\\~~~~~~~~~ $d_1$: Dist.\ to Lens $|$ $d_2$: Dist.\ to Focus}
 \fancyfoot[R]{\thepage}
+
+% Theorem environments for structuring theory
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{hypothesis}{Hypothesis}
 \newtheorem{definition}{Definition}[section]
+
+% Document Information
 \title{\textbf{Theory}\\ \large Gaussian Beam Optics}
 \author{Tyler Celotta \\ UAF}
 \date{\today}
@@ -261,7 +269,7 @@ proving Eq.~\ref{22}, where $\alpha^2 = \frac{f^2}{(d_1-f)^2+z_{01}^2}$ follows 
 \begin{enumerate}
     \item \textbf{Crystal Length}
     \begin{enumerate}
-        \item Decided by avalible materials, manufacturing capabilities and cost. \footnote{Each crystal has an associated pump acceptance bandwidth $\(\Delta \lambda \approx \frac{0.44 \lambda}{L \vert{}n_z'(\lambda) - 0.5n_z'(\lambda/2)\vert{}}\) $which is inversely dependent on length, so crystal length is an important factor when choosing a crystal. This acceptance bandwidth is due to the group velocity mismatch between the interacting waves. For narrowband CW sources our longer crystal lengths, at 20 to 40mm, should give best efficiency. However, for pulsed sources, a long crystal can have a negative effect if the pump bandwidth is much broader than the crystal acceptance bandwidth. For nanosecond pulses, we typically recommend 10mm lengths and our shortest lengths at 0.5 to 1mm are ideal for femtosecond pulse systems. For SHG of femtosecond pulses, if the pump bandwidth is significantly wider than the acceptance bandwidth, it is still possible to achieve high conversion efficiency. The pump frequencies outside of the acceptance bandwidth can still contribute to the conversion efficiency via sum frequency generation, essentially squeezing the broadband pump into a relatively narrower-band SHG pulse.}
+        \item No special action required at this stage.
     \end{enumerate}
 
     \item \textbf{Polarization}
@@ -402,9 +410,9 @@ proving Eq.~\ref{22}, where $\alpha^2 = \frac{f^2}{(d_1-f)^2+z_{01}^2}$ follows 
 
     \end{tikzpicture}
     }
-    \vspace{.5cm}
-    \renewcommand{\arraystretch}{1.2}
-    \small
+    \vspace{.5cm} % Adds a little breathing room
+    \renewcommand{\arraystretch}{1.2} % Spaces out the rows slightly
+    \small % Reduces font size for the legend
     \begin{tabular}{@{}ll | ll@{}}
         \textbf{1.} & 1064\,nm laser beam (fiber)           & \textbf{a.} & Laser power source \\
         \textbf{2.} & Amplified 1064\,nm laser beam (fiber) & \textbf{b.} & 1064\,nm laser \\
@@ -427,16 +435,10 @@ add graph
 \subsection{Achieved Waist Measurement}
 Add measurements
 \subsection{Comparison with Boyd–Kleinman Prediction}
-interms of efficancy check inbetween 2.81 and 1
-\section{Error Analysis}
-\begin{itemize}
-    \item Uncertainty in $\omega_{01}$ from divergence measurement: $\pm X\%$
-    \item Tolerance on lens placement $d_1$: $\pm 1$\,mm leads to waist change of …
-    \item Total uncertainty in achieved $\omega_{02}$: $\pm Y\,\mu$m
-\end{itemize}
+interms of efficancy check inbetween 2.81 and
 \newpage
 \section{Operating Instructions}
-\subsection{Prerequisites/Saftey}
+\subsection{Prerequisites}
 \begin{itemize}
     \item Ensure curtains are closed and laser indicator is on outside the lab.
     \item Take off all jewlery and don appropriate laser safety goggles.
@@ -466,13 +468,7 @@ interms of efficancy check inbetween 2.81 and 1
     \item Turn on the amplifier key switch, then wait for system to boot through serial number and loading screens.
     \item Turn on the amplifier output by turning the dial to highlight \textit{START}, then push the dial in.
 \end{enumerate}
-\subsection{Beam Alignment}
-\begin{enumerate}
-    \item Verify collimator output is centered on iris.
-    \item Place focusing lens at distance $d_1$ (see Sec.\,\ref{sec:lens}).
-    \item …
-    \item Use IR viewer/detector card to check that beam is not clipped by the crystal housing.
-\end{enumerate}
+
 \subsection{How to Shut Down the Laser System}
 \begin{enumerate}
     \item Turn the key to off on the amplifier and then shut it down.
@@ -482,15 +478,17 @@ interms of efficancy check inbetween 2.81 and 1
 \subsection{Troubleshooting}
 Placeholder for troubleshooting instructions.
 \newpage
-\section{Optical Lab Components Inventory}
+\section{Optical Components List}
 
 \begin{longtable}{@{} p{0.15\textwidth} p{0.35\textwidth} p{0.45\textwidth} @{}}
-\textbf{Part Num} & \textbf{Specifications} & \textbf{Description} \\
+\toprule
+\textbf{Part \#} & \textbf{Specs} & \textbf{Description} \\
 \midrule
 \endfirsthead
 
 \multicolumn{3}{c}{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
-\textbf{Part Num} & \textbf{Specifications} & \textbf{Description} \\
+\toprule
+\textbf{Part \#} & \textbf{Specifications} & \textbf{Description} \\
 \midrule
 \endhead
 
@@ -667,77 +665,6 @@ LH-GR-8 & $L=8^{\prime\prime}$ & A-Line Guide Rods \\
 LH-GR-10 & $L=10^{\prime\prime}$ & A-Line Guide Rods \\
 LFTO-WH & $\varnothing 1^{\prime\prime}$ Retaining Ring & Spanner Wrenches \\
 SW-OM & $\varnothing 0.25^{\prime\prime}$ to $\varnothing 2^{\prime\prime}$ Retaining Ring & Spanner Wrenches \\
-\midrule
-\multicolumn{3}{@{}l}{\textbf{Edmund Industrial Optics}} \\
-\midrule
-DCX 12 & $\varnothing 1/2^{\prime\prime}$ & Bi-Convex Lens \\  
-DCX 24 & $\varnothing 1/2^{\prime\prime}$ & Bi-Convex Lens \\  
-DCX 36 & $\varnothing 1/2^{\prime\prime}$ & Bi-Convex Lens \\  
-DCX 48 & $\varnothing 1/2^{\prime\prime}$ & Bi-Convex Lens \\  
-DCX 60 & $\varnothing 1/2^{\prime\prime}$ & Bi-Convex Lens \\  
-PCX 12 & $\varnothing 1/2^{\prime\prime}$ & Plano-Convex Lens \\  
-PCX 24 & $\varnothing 1/2^{\prime\prime}$ & Plano-Convex Lens \\  
-PCX 36 & $\varnothing 1/2^{\prime\prime}$ & Plano-Convex Lens \\  
-PCX 48 & $\varnothing 1/2^{\prime\prime}$ & Plano-Convex Lens \\  
-PCX 60 & $\varnothing 1/2^{\prime\prime}$ & Plano-Convex Lens \\  
-PCV 12 & $\varnothing 1/2^{\prime\prime}$ & Plano-Concave Lens \\  
-PCV 24 & $\varnothing 1/2^{\prime\prime}$ & Plano-Concave Lens \\  
-PCV 48 & $\varnothing 1/2^{\prime\prime}$ & Plano-Concave Lens \\  
-DCV 12 & $\varnothing 1/2^{\prime\prime}$ & Bi-Concave Lens \\  
-EFL 12 & $\varnothing 1/2^{\prime\prime}$ & Lens (EFL = 12) \\  
-EFL 15 & $\varnothing 1/2^{\prime\prime}$ & Lens (EFL = 15) \\  
-EFL 18 & $\varnothing 1/2^{\prime\prime}$ & Lens (EFL = 18) \\  
-EFL 24 & $\varnothing 1/2^{\prime\prime}$ & Lens (EFL = 24) \\  
-EFL 30 & $\varnothing 1/2^{\prime\prime}$ & Lens (EFL = 30) \\  
-EFL 36 & $\varnothing 1/2^{\prime\prime}$ & Lens (EFL = 36) \\  
-EFL 42 & $\varnothing 1/2^{\prime\prime}$ & Lens (EFL = 42) \\  
-EFL 48 & $\varnothing 1/2^{\prime\prime}$ & Lens (EFL = 48) \\  
-EFL 54 & $\varnothing 1/2^{\prime\prime}$ & Lens (EFL = 54) \\  
-EFL 60 & $\varnothing 1/2^{\prime\prime}$ & Lens (EFL = 60) \\  
-EFL 72 & $\varnothing 1/2^{\prime\prime}$ & Lens (EFL = 72) \\  
-EFL 84 & $\varnothing 1/2^{\prime\prime}$ & Lens (EFL = 84) \\  
-EFL 100 & $\varnothing 1/2^{\prime\prime}$ & Lens (EFL = 100) \\  
-\midrule
-\multicolumn{3}{@{}l}{\textbf{MKS Newport 8-32 Hardware Kit (Item SK-1)}} \\
-\midrule
-N8S & \#8 & Nut \\  
-W8S038 & \#8 & Washer \\  
-SH8S025 & $8-32 \times 1/4^{\prime\prime}$ & Cap Screw \\  
-SH8S038 & $8-32 \times 3/8^{\prime\prime}$ & Cap Screw \\  
-SH8S050 & $8-32 \times 1/2^{\prime\prime}$ & Cap Screw \\  
-SH8S075 & $8-32 \times 3/4^{\prime\prime}$ & Cap Screw \\  
-SH8S100 & $8-32 \times 1^{\prime\prime}$ & Cap Screw \\  
-SH8S125 & $8-32 \times 1\,1/4^{\prime\prime}$ & Cap Screw \\  
-SH8S150 & $8-32 \times 1\,1/2^{\prime\prime}$ & Cap Screw \\  
-\midrule
-\multicolumn{3}{@{}l}{\textbf{General Lab Instruments \& Accessories}} \\
-\midrule
-KPX058 & $f=88.3$~mm, $\varnothing 12.7$~mm & PCX Lens, BK7 uncoated (Newport) \\  
-TC4 & Hex/Allen Keys & Thorlabs Tool Kit \\ 
-LB1 & 400~nm -- 2~$\mu$m, 10W & Beam Block (Thorlabs) \\ 
-BS040 & 400--700~nm, 12.7~mm & 10:90 Non-Pol Beamsplitter Cube \\
-ULM-TILT & --- & Collimator Holder (Newport) \\
-MT-RS & --- & Optical Rotation Mount for Polarizer \\
-TC-038D & SC2502260152-02 & HCP Crystal Oven Controller \\ 
-PM5020 & --- & Dual Channel Optical Power/Energy Meter \\
-LDC-3726 & --- & ILX Lightwave Laser Diode Controller \\
-TFN-1064.502 & --- & TeraXion Narrowband Tunable Optical Filter \\ 
-LDM-4980 & --- & ILX Lightwave Laser Diode Mount \\
-ULS2048XL-EVO & --- & Avantes Sensline Spectrometer \\
-Keopsys & --- & Lumibird Laser \\ 
-VRC2 & 400--640~nm, 800--1700~nm & Detector Card (Thorlabs) \\ 
-VRC5 & 700--1400~nm & Detector Card (Thorlabs) \\ 
-PM-1064-10 & --- & Optilab RF Phase Modulator \\
-SC2502260152-02 & P:3.2 I:33 D:6 & Crystal Oven \\
-UP-1A & --- & Newport Universal Post \\
-S-2000 Series & --- & Stabilizer Laminar Flow Isolator (Newport) \\
-RS2000 & --- & Sealed Hole Table Top (Newport) \\ 
-ATS Series & --- & Overhead Table Shelf System (Newport) \\
-Lens Tissues & --- & Thorlabs Lens Cleaning Tissues \\ 
-Statshield & --- & ESD Garment \\ 
-BB-M & --- & Broadband Mirror (Newport) \\ 
-HW-KIT6 & --- & Thorlabs Thread Adapter Kit \\ 
-HW-KIT2 & $1/4^{\prime\prime}$-20 & Thorlabs Hardware Kit \\ 
 \end{longtable}
 \newpage
 \theendnotes
