@@ -329,23 +329,16 @@ a
 waist
 radius
 of
-45~$\mu
+$45~\mu
 $m
 rather
 than
 the
 updated
-279.9~$\mu
+$279.9~\mu
 $m
 derived
-here.\\
-\begin
-{center}
-\includegraphics
-[width=0.5\linewidth
-]{figures/ss1.png}
-\end
-{center}
+here.
 \@endanenote 
 \@doanenote {7}
 macro:->Periodically
