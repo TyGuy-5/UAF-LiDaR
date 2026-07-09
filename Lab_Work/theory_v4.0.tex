@@ -65,7 +65,7 @@
 \maketitle
 \thispagestyle{fancy}
 \begin{abstract}
-    The purpose of the document is to work through the theory and experimental design for optimizing second-harmonic generation (SHG) at 1064 nm using a periodically poled lithium niobate (PPLN) crystal ($50 \times 2 \times 0.5~\text{mm}^3$). In this document, I define Gaussian beam parameters, including beam waist, Rayleigh range, divergence, and confocal parameter, in order to determine the optimal focusing geometry. The Boyd-Kleinman condition for maximum CW SHG efficiency ($L/b = 2.84$) is a target focused waist of approximately 54.6 µm, but experimental constraints redefines a target of 77–80 µm ($L/b \approx 1.3-1.4$). Starting from a collimated 0.56 mm beam at 1064 nm with a measured divergence of 1.21 mRad, the collimator waist is estimated to be $\omega_{01} \approx 280$ µm, located 6.2 mm behind the collimator face. That being said, the calculated waist radius of roughly 0.279 mm would result in a beam larger than the crystal itself can accommodate. To account for this, I used an ABCD ray-transfer matrix to propigate a beam, constructing two equations relating a chosen lens focal length $f$ to the required lens position $d_{1}$ and image distance $d_{2}$, with magnification $\alpha \approx 0.286$.
+    The purpose of the document is to work through the theory and experimental design for optimizing second-harmonic generation (SHG) at 1064 nm using a periodically poled lithium niobate (PPLN) crystal ($50 \times 2 \times 0.5~\text{mm}^3$). In this document, I define Gaussian beam parameters, including beam waist, Rayleigh range, divergence, and confocal parameter, in order to determine the optimal focusing geometry. The Boyd-Kleinman condition for maximum CW SHG efficiency ($L/b = 2.84$) is a target focused waist of approximately 54.6~$\mu$m, but experimental constraints redefines a target of 77--80~$\mu$m ($L/b \approx 1.3-1.4$). Starting from a collimated 0.56 mm beam at 1064 nm with a measured divergence of 1.21 mRad, the collimator waist is estimated to be $\omega_{01} \approx 280$~$\mu$m, located 6.2 mm behind the collimator face. That being said, the calculated waist radius of roughly 0.279 mm would result in a beam larger than the crystal itself can accommodate. To account for this, I used an ABCD ray-transfer matrix to propigate a beam, constructing two equations relating a chosen lens focal length $f$ to the required lens position $d_{1}$ and image distance $d_{2}$, with magnification $\alpha \approx 0.286$.
 \end{abstract}
 
 \section{Experiment Specifics}
@@ -458,6 +458,176 @@ proving Eq.~\ref{22}, where $\alpha^2 = \frac{f^2}{(d_1-f)^2+z_{01}^2}$ follows 
     \caption{Experimental setup and component legend.} 
 \end{figure}
 
+
+\newpage
+\subsubsection*{Signal Processing Calculations}
+\textit{This section was taken from the Jupyter Notebook I used to calculate the beam params.}
+The purpose of this notebook is to work through the theory and experimental design for optimizing second-harmonic generation (SHG) at 1064 nm using a periodically poled lithium niobate (PPLN) crystal ($50 \times 2 \times 0.5~\text{mm}^3$). We define Gaussian beam parameters—including beam waist, Rayleigh range, divergence, and confocal parameter—to determine the optimal focusing geometry. 
+
+The Boyd-Kleinman condition for maximum CW SHG efficiency ($L/b = 2.84$) sets a target focused waist of approximately 54.6~$\mu$m, but experimental constraints redefine a target of 77--80~$\mu$m ($L/b \approx 1.3-1.4$). 
+
+Starting from a collimated 0.56 mm beam at 1064 nm with a measured divergence of 1.21 mRad, the collimator waist is estimated to be $\omega_{01} \approx 280$~$\mu$m, located 6.2 mm behind the collimator face. Because a waist radius of roughly 0.279 mm would result in a beam larger than the crystal itself can accommodate, we use an ABCD ray-transfer matrix to propagate the beam, constructing equations relating a chosen lens focal length $f$ to the required lens position $d_{1}$ and image distance $d_{2}$.
+\textbf{Test 1:}
+\begin{itemize}
+    \item Wavelength: 1064 nm
+    \item Collimator output beam size: 0.56 mm ($1/e^2$ diameter)
+    \item PPLN crystal: $50 \times 2 \times 0.5$~mm$^3$
+    \item Previous best measured output: 57 mW green, PPLN at $59.5^\circ$C
+    \item Previous calculated waist: 45~$\mu$m
+    \item \textbf{Desired next target:} 77--80~$\mu$m
+\end{itemize}
+
+\begin{lstlisting}[language=Python]
+import numpy as np
+import math
+wavelength = 1064e-9  # m
+collimator_diam = 0.56e-3  # m
+crystal_length = 50e-3  # m
+measured_divergence = 1.21e-3  # rad
+\end{lstlisting}
+
+Repeating the analysis without assuming the beam waist is exactly at the collimator face (using the measured 1.21 mRad divergence).
+\begin{enumerate}
+\item Recover the true waist from the measured divergence.
+\item Calculate the distance $z$ from the true waist to the collimator face where the beam radius is 0.28 mm.
+\item Recalculate the true Rayleigh range.
+\end{enumerate}
+
+\begin{lstlisting}[language=Python]
+# 1. True initial waist from measured divergence
+omega_01 = wavelength / (np.pi * measured_divergence)
+print(f"True Collimator Waist (omega_01): {omega_01 * 1e6:.1f} um")
+
+# 2. Distance from waist to collimator face
+omega_aperture = collimator_diam / 2
+# Solving the omega(z) equation for z
+z_collimator = np.sqrt((omega_aperture**2 / omega_01**2) - 1) * (np.pi * omega_01**2) / wavelength
+print(f"Distance from waist to face: {z_collimator * 1e3:.2f} mm")
+
+# 3. True Rayleigh range of the initial beam
+z_01 = (np.pi * omega_01**2) / wavelength
+print(f"Initial Rayleigh Range (z_01): {z_01 * 100:.2f} cm")
+\end{lstlisting}
+\begin{verbatim}
+True Collimator Waist (omega_01): 279.9 um
+Distance from waist to face: 6.11 mm
+Initial Rayleigh Range (z_01): 23.13 cm
+\end{verbatim}
+
+\begin{lstlisting}[language=Python]
+targets_um = [45, 54.6, 77, 80] # um
+
+print("Boyd-Kleinman Ratios (L/b) for target waists:")
+print("-" * 50)
+for target in targets_um:
+    omega_02 = target * 1e-6
+    b = (2 * np.pi * omega_02**2) / wavelength
+    xi = crystal_length / b
+    print(f"Target Waist: {target:>4.1f} um | L/b = {xi:.3f}")
+\end{lstlisting}
+\begin{verbatim}
+Boyd-Kleinman Ratios (L/b) for target waists:
+--------------------------------------------------
+Target Waist: 45.0 um | L/b = 4.181
+Target Waist: 54.6 um | L/b = 2.840
+Target Waist: 77.0 um | L/b = 1.428
+Target Waist: 80.0 um | L/b = 1.323
+\end{verbatim}
+
+\begin{lstlisting}[language=Python]
+
+target_omega_02 = 80e-6  # 80 um
+focal_length = float(input("Enter the lens focal length (in mm): ")) * 1e-3 
+
+# Calculate Magnification
+alpha = target_omega_02 / omega_01
+
+# Calculate d1 (Distance from initial waist to lens)
+inside_sqrt = (focal_length / alpha)**2 - z_01**2
+
+if inside_sqrt >= 0:
+    d1 = np.sqrt(inside_sqrt) + focal_length
+    # Calculate d2 (Distance from lens to new focus inside crystal)
+    d2 = focal_length + (alpha**2) * (d1 - focal_length)
+    
+    # Calculate physical distance from the collimator face to the lens
+    # Note: z_collimator was calculated in Cell 6 as a positive distance
+    d1_face = d1 - z_collimator 
+    
+    print(f"Magnification (alpha): {alpha:.4f}")
+    print(f"Lens focal length: {focal_length * 1000:.1f} mm")
+    print("-" * 60)
+    print(f"Optical Distance (Waist to Lens, d1): {d1 * 1000:.2f} mm")
+    print(f"--> Physical Distance (Collimator FACE to Lens): {d1_face * 1000:.2f} mm")
+    print("-" * 60)
+    print(f"Distance from Lens to Focus (d2): {d2 * 1000:.2f} mm")
+else:
+    print(f"No valid real solution for a {focal_length * 1000:.1f} mm lens.")
+
+\end{lstlisting}
+
+\begin{verbatim}
+True Collimator Waist (omega_01): 279.9 um
+Distance from waist to face: 6.11 mm
+Initial Rayleigh Range (z_01): 23.13 cm
+Boyd-Kleinman Ratios (L/b) for target waists:
+--------------------------------------------------
+Target Waist: 45.0 um | L/b = 4.181
+Target Waist: 54.6 um | L/b = 2.840
+Target Waist: 77.0 um | L/b = 1.428
+Target Waist: 80.0 um | L/b = 1.323
+Magnification (alpha): 0.2858
+Lens focal length: 88.3 mm
+------------------------------------------------------------
+Optical Distance (Waist to Lens, d1): 293.08 mm
+--> Physical Distance (Collimator FACE to Lens): 286.96 mm
+------------------------------------------------------------
+Distance from Lens to Focus (d2): 105.03 mm
+\end{verbatim}
+
+\textbf{Test 2:}
+Changes in code:
+\begin{lstlisting}[language=Python]
+crystal_length = 25e-3
+\end{lstlisting}
+\begin{verbatim}
+True Collimator Waist (omega_01): 279.9 um
+Distance from waist to face: 6.11 mm
+Initial Rayleigh Range (z_01): 23.13 cm
+Boyd-Kleinman Ratios (L/b) for target waists:
+--------------------------------------------------
+Target Waist: 38.8 um | L/b = 2.810
+Target Waist: 54.6 um | L/b = 1.420
+Target Waist: 65.1 um | L/b = 1.000
+Magnification (alpha): 0.1387
+Lens focal length: 50.0 mm
+------------------------------------------------------------
+Optical Distance (Waist to Lens, d1): 326.57 mm
+--> Physical Distance (Collimator FACE to Lens): 320.46 mm
+------------------------------------------------------------
+Distance from Lens to Focus (d2): 55.32 mm
+Target Waist: 38.8 um
+Initial Waist: 279.9 um
+Magnification (alpha): 0.1387
+
+--------------------------------------------------------------------------------
+Lens Name       | f (mm)   | d1 (mm)    | d2 (mm)    | Total Path (mm)
+--------------------------------------------------------------------------------
+Lens 0.5Dia (35mm) | 35.0     | 135.95     | 36.94      | 172.89         
+Lens 0.5Dia (40mm) | 40.0     | 212.31     | 43.31      | 255.62         
+Lens 0.5Dia (50mm) | 50.0     | 326.57     | 55.32      | 381.89         
+Lens 0.5Dia (60mm) | 60.0     | 425.64     | 67.03      | 492.67         
+Lens 0.5Dia (75mm) | 75.0     | 563.87     | 84.40      | 648.27         
+Lens 0.5Dia (100mm) | 100.0    | 783.01     | 113.13     | 896.14         
+Lens 0.5Dia (125mm) | 125.0    | 996.21     | 141.75     | 1137.96        
+Lens 0.5Dia (150mm) | 150.0    | 1206.65    | 170.32     | 1376.97        
+Lens 0.5Dia (175mm) | 175.0    | 1415.58    | 198.86     | 1614.43        
+Lens 0.5Dia (200mm) | 200.0    | 1623.57    | 227.38     | 1850.94        
+Lens 0.5Dia (400mm) | 400.0    | 3275.18    | 455.29     | 3730.48        
+Lens 0.5Dia (500mm) | 500.0    | 4098.17    | 569.19     | 4667.36        
+--------------------------------------------------------------------------------
+\end{verbatim}
+
 \newpage
 \section{Experimental Results}
 
@@ -633,6 +803,7 @@ def fit_beam_radius(x, profile):
     perr = np.sqrt(np.diag(pcov))
     return popt, perr
 \end{lstlisting}
+
 
 \newpage
 \subsubsection*{Signal Processing}
