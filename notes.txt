@@ -1,0 +1,22 @@
+## Takeaways
+
+**Measured 1/e² beam radius:** roughly **~88-89 µm** for Test 1 (12.0-12.4 mm scan) and
+**~42-45 µm** for Test 2 (5.16-5.32 mm scan), based on the methods that agree with each other
+(Moving Average, Exponential Smoothing, Savitzky-Golay, Median all cluster tightly; FFT-denoised
+agrees too for Test 2 but ran wide for Test 1 -- see below).
+
+- **Moving Average** and **Savitzky-Golay** gave the smoothest resulting beam profiles here (lowest
+  roughness) while still tracking the S-curve well -- Savitzky-Golay has the extra advantage of
+  preserving peak shape/curvature better since it fits a local polynomial instead of a flat average.
+- **Exponential Smoothing** is causal (only looks backward), so a single pass lags the signal and
+  leaves more residual noise than the symmetric-window filters at a comparable "strength"; the
+  *optimized* alpha from `statsmodels` tends toward ~1 (almost no smoothing) because it's tuned for
+  one-step-ahead forecast accuracy, not visual denoising -- a smaller, manually chosen alpha is more
+  useful here.
+- **Median filtering** is the least effective of the four at suppressing this data's noise, but it
+  remains the best choice specifically for rejecting isolated spikes/outliers without blurring edges
+  (which is exactly how it's used above, ahead of the other filters, for outlier removal).
+- **FFT-based denoising**, applied directly to the beam profile (not the S-curve, since the method
+  assumes a Gaussian-shaped signal near zero at both edges), gives by far the lowest roughness score
+  and the cleanest-looking Gaussian, at the cost of needing evenly-spaced samples and a bit more
+  machinery (spectral fitting, thresholding) than the simpler time/space-domain filters.
