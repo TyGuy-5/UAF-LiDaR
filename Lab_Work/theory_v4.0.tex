@@ -708,8 +708,67 @@ To determine the beam waist, two razor-blade profiling tests were conducted. The
     \caption{Final beam profile and Gaussian fits for Test 2.}
 \end{figure}
 
+\subsubsection*{6/29 Razor Test 3}
+
+\textbf{Experimental Setup:}
+\begin{itemize}
+    \item Collimator face to reflection off wedge: 85\,mm
+    \item Wedge to mirror: 133\,mm
+    \item Mirror to lens: 102.5\,mm
+    \item Lens to blade: 56\,mm
+    \item Blade to sensor: 200\,mm
+    \item Focal length: 50\,mm (1 in diameter)
+    \item \textbf{Measured Distances:} $d_1 = 320.5$\,mm, $d_2 = 56$\,mm. Total Path: 376.5\,mm.
+\end{itemize}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{lcc}
+        \toprule
+        \textbf{Smoothing Method} & \textbf{$\omega$ ($1/e^2$ radius, $\mu$m)} & \textbf{Center (mm)} \\
+        \midrule
+        Moving Average & $46.61 \pm 1.52$ & 0.0973 \\
+        Exp. Smoothing & $44.70 \pm 2.49$ & 0.0999 \\
+        Savitzky-Golay & $45.62 \pm 2.00$ & 0.0970 \\
+        Median Filter  & $46.57 \pm 4.83$ & 0.0972 \\
+        \textbf{FFT-denoised} & \textbf{30.53 $\pm$ 1.50} & \textbf{0.0956} \\
+        \bottomrule
+    \end{tabular}
+    \caption{Gaussian fit results for Razor Test 3.}
+\end{table}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\linewidth]{"figures/test3.png"} 
+    \caption{Final beam profile and Gaussian fits for Test 3.}
+\end{figure}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{lcc}
+        \toprule
+        \textbf{Smoothing Method [Filtered]} & \textbf{$\omega$ ($1/e^2$ radius, $\mu$m)} & \textbf{Center (mm)} \\
+        \midrule
+            Moving Average  & $46.09 \pm 1.38$ & $0.0974$ \\
+            Exp. Smoothing  & $44.26 \pm 2.20$ & $0.1001$ \\
+            Savitzky-Golay  & $44.11 \pm 2.25$ & $0.0973$ \\
+            Median Filter   & $46.63 \pm 4.32$ & $0.0976$ \\
+        \textbf{FFT-denoised} & \textbf{28.40 $\pm$ 1.90} & \textbf{0.0954} \\
+        \bottomrule
+    \end{tabular}
+    \caption{Gaussian fit results for Razor Test 3 Filtered.}
+\end{table}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\linewidth]{"figures/test3_f.png"} 
+    \caption{Final beam profile and Gaussian fits for Test 3 Filtered.}
+\end{figure}
+
+
+
+
 \subsection{Comparison with Boyd–Kleinman Prediction}
-[Evaluate efficacy, checking values between $L/b = 2.81$ and actual results]
 
 \newpage
 \subsection{Data Processing and Analysis Code}\label{sec:dataproc}
@@ -903,11 +962,6 @@ The following figures provide additional vissualization and help show how the da
 \newpage
 \section{Error Analysis}
 
-\includegraphics[width=0.5\linewidth]{"figures/IMG_5564.JPG"}
-\includegraphics[width=0.5\linewidth]{"figures/IMG_5565.JPG"}
-
-\includegraphics[width=0.5\linewidth]{"figures/IMG_5568.JPG"}
-\includegraphics[width=0.5\linewidth]{"figures/IMG_5569.JPG"}
 
 
 
