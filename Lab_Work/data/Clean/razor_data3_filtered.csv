@@ -8,7 +8,7 @@ Thorlabs,PM5020_5E,10 ms,2026-07-15 5:12:21,CW,1,,
 0,S425C-L,1932731,Thermopile,1064 nm,manual,0 dB,W
 1,S120VC,230131112,Photodiode,1064 nm,auto,0 dB,W
 ,,,,,,,
-Power (mW),Distance (mm),Ambient power,Power (mW)  filtered,,,,
+[Ch: 2],#[meter],[Ch: 1],[Ch: 2] filtered,,,,
 6.72E-05,0.25,1.08E+00,6.21E-05,,,,
 7.20E-05,0.249,1.09E+00,6.63E-05,,,,
 6.92E-05,0.248,1.08E+00,6.39E-05,,,,
