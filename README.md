@@ -1,45 +1,45 @@
 ```
 alaska/
-├── Lab_Work/
-│   ├── clean_data.py
-│   ├── razor_data_notebook.ipynb
-│   ├── Theory_jupyter.ipynb
-│   ├── theory.bib
-│   ├── theory_v4.0.aux
-│   ├── theory_v4.0.bbl
-│   ├── theory_v4.0.blg
-│   ├── theory_v4.0.ent
-│   ├── theory_v4.0.fdb_latexmk
-│   ├── theory_v4.0.fls
-│   ├── theory_v4.0.log
-│   ├── theory_v4.0.out
-│   ├── theory_v4.0.pdf
-│   ├── theory_v4.0.synctex.gz
-│   ├── theory_v4.0.tex
-│   ├── data/
-│   │   ├── data_vert_rec2026_07_30_22_56_56_0.csv
-│   │   ├── filtered_data.csv
-│   │   ├── july31 last horizontal\rec2026_08_01_03_08_53_0.csv
-│   │   ├── razor_data3.0csv
-│   │   ├── razor_data3.csv
-│   │   ├── rec2026_07_15_02_17_48_0.csv
-│   │   ├── rec2026_07_15_05_11_36_0.csv
-│   │   ├── rec2026_07_15_05_12_20_0.csv
-│   │   ├── rlaser_error.csv
-│   │   └── Clean/
-│   │       ├── razor_data.csv
-│   │       ├── razor_data2.csv
-│   │       ├── razor_data3.csv
-│   │       ├── razor_data3_filtered.csv
-│   │       ├── razor_data4_vertical.csv
-│   │       └── razor_data5.csv
-│   ├── figures/
-│   │   ├── 0425_Blue_UAF_Horizontal_CMYK.jpg
-│   │   ├── 0824_White_UAF_Horizontal_CMYK-11.eps
-│   │   ├── benchmark.png
-│   │   ├── download.jpg
-│   │   ├── download.png
-│   │   ├── GI Logo (color).png
+**Main Folder ** ├── Lab_Work/
+             │   ├── clean_data.py
+             │   ├── razor_data_notebook.ipynb
+             │   ├── Theory_jupyter.ipynb
+             │   ├── theory.bib
+             │   ├── theory_v4.0.aux
+             │   ├── theory_v4.0.bbl
+             │   ├── theory_v4.0.blg
+             │   ├── theory_v4.0.ent
+             │   ├── theory_v4.0.fdb_latexmk
+             │   ├── theory_v4.0.fls
+             │   ├── theory_v4.0.log
+             │   ├── theory_v4.0.out
+             │   ├── theory_v4.0.pdf
+             │   ├── theory_v4.0.synctex.gz
+             │   ├── theory_v4.0.tex
+             │   ├── data/
+             │   │   ├── data_vert_rec2026_07_30_22_56_56_0.csv
+             │   │   ├── filtered_data.csv
+             │   │   ├── july31 last horizontal\rec2026_08_01_03_08_53_0.csv
+             │   │   ├── razor_data3.0csv
+             │   │   ├── razor_data3.csv
+             │   │   ├── rec2026_07_15_02_17_48_0.csv
+             │   │   ├── rec2026_07_15_05_11_36_0.csv
+             │   │   ├── rec2026_07_15_05_12_20_0.csv
+             │   │   ├── rlaser_error.csv
+             │   │   └── Clean/
+             │   │       ├── razor_data.csv
+             │   │       ├── razor_data2.csv
+             │   │       ├── razor_data3.csv
+             │   │       ├── razor_data3_filtered.csv
+             │   │       ├── razor_data4_vertical.csv
+             │   │       └── razor_data5.csv
+             │   ├── figures/
+             │   │   ├── 0425_Blue_UAF_Horizontal_CMYK.jpg
+             │   │   ├── 0824_White_UAF_Horizontal_CMYK-11.eps
+             │   │   ├── benchmark.png
+             │   │   ├── download.jpg
+             │   │   ├── download.png
+             │   │   ├── GI Logo (color).png
 │   │   ├── gi_logo.eps
 │   │   ├── gi_logo.svg
 │   │   ├── IMG_3401.JPG
